@@ -1,118 +1,8 @@
 const siteRoot = new URL("../", document.currentScript.src);
 
 document.addEventListener("DOMContentLoaded", () => {
-  const featuredProducts = {
-    "tram-huong": {
-      name: "Trầm Hương Cao Cấp",
-      image: "assets/images/tramhuong-tach-nen.png",
-      images: [
-        "assets/images/tramhuong-tach-nen.png",
-        "assets/images/tramhuong-tach-nen.png",
-        "assets/images/tramhuong(1)-tach-nen.png",
-        "assets/images/tramhuong(2)-tach-nen.png",
-      ],
-      description: "Trầm hương là phần gỗ chứa nhiều chất nhựa thơm được sinh ra từ thân cây Dó bầu (Aquilaria) khi cây bị thương tổn do tác động của tự nhiên hoặc con người.",
-      feature: "Gỗ Dó bầu tích tụ nhựa thơm, mang hương thơm đặc trưng, sâu lắng.",
-    },
-    "tram-loai-4": {
-      name: "Trầm Loại 4",
-      image: "assets/images/tram_loai4-tach-nen.png",
-      images: [
-        "assets/images/tram_loai4-tach-nen.png",
-        "assets/images/tram_loai4-tach-nen.png",
-        "assets/images/tram_loai4(1)-tach-nen.png",
-      ],
-      description: "Trầm loại 4 là phân cấp trầm hương có lượng tinh dầu thấm vào thớ gỗ không nhiều, mùi thơm nhẹ hoặc ít đậm.",
-      feature: "Lượng tinh dầu không nhiều, hương nhẹ hoặc ít đậm, gỗ thường sáng màu và không chìm nước.",
-    },
-    "tram-loai-5": {
-      name: "Trầm loại 5",
-      image: "assets/images/tram_loai5-tach-nen.png",
-      images: [
-        "assets/images/tram_loai5-tach-nen.png",
-        "assets/images/tram_loai5-tach-nen.png",
-        "assets/images/tram_loai5(1)-tach-nen.png",
-        "assets/images/tram_loai5(2)-tach-nen.png",
-      ],
-      description: "Trầm loại 5 là phân cấp trầm hương có lượng tinh dầu thấm vào thớ gỗ rất ít và mùi thơm nhẹ.",
-      feature: "Lượng tinh dầu rất ít, hương nhẹ; gỗ thường sáng màu hơn Trầm loại 4 và không chìm nước.",
-    },
-    "tram-ruc": {
-      name: "Trầm Rục",
-      image: "assets/images/tramruc.jpg",
-      images: [
-        "assets/images/tramruc.jpg",
-        "assets/images/tramruc(1).jpg",
-        "assets/images/tramruc(2).jpg",
-      ],
-      description: "Trầm Rục là loại trầm hương tự nhiên được hình thành từ cây Dó bầu đã chết, ngã đổ và vùi lấp trong đất hoặc bùn ẩm lâu năm.",
-      feature: "Hình thành từ cây Dó bầu chết, ngã đổ lâu năm; phần gỗ không nhiễm dầu phân hủy, để lại phần gỗ tích trầm.",
-    },
-    "tram-toc": {
-      name: "Trầm Tốc",
-      image: "assets/images/tramtoc-tach-nen.png",
-      images: [
-        "assets/images/tramtoc-tach-nen.png",
-        "assets/images/tramtoc-tach-nen.png",
-        "assets/images/tramtoc(1)-tach-nen.png",
-      ],
-      description: "Trầm Tốc là loại trầm phổ biến, có lượng dầu nhiễm nhẹ trong các thớ gỗ và giá thành vừa phải.",
-      feature: "Lượng dầu nhiễm nhẹ trong thớ gỗ, giá thành vừa phải; thường dùng làm vòng tay, chuỗi hạt hoặc nhang trầm.",
-    },
-    "bi-ky-nam": {
-      name: "Bì Kỳ Nam",
-      image: "assets/images/bi-ky-nam-3-tach-nen.png",
-      images: [
-        "assets/images/bi-ky-nam-1-tach-nen.png",
-        "assets/images/bi-ky-nam-2-tach-nen.png",
-        "assets/images/bi-ky-nam-3-tach-nen.png",
-        "assets/images/bi-ky-nam-4-tach-nen.png",
-      ],
-      description: "Bì Kỳ Nam (Kỳ nam) được cửa hàng giới thiệu là sản phẩm gỗ quý hiếm hình thành từ lõi cây Dó bầu (Aquilaria) khi cây bị tổn thương hoặc tác động sinh học.",
-      feature: "Gỗ Dó bầu quý hiếm, được giới thiệu có mức tích nhựa cao, chất gỗ mềm dẻo như sáp.",
-    },
-  };
-
-  // Product copy is kept together so each family can be updated independently.
-  const productCopy = {
-    "tram-huong":  {
-                       "name":  "Trầm Hương",
-                       "category":  "Thông Tin Chi Tiết",
-                       "description":  "Trầm hương là phần gỗ chứa nhiều chất nhựa thơm được sinh ra từ thân cây Dó bầu (Aquilaria) khi cây bị thương tổn do tác động của tự nhiên hoặc con người. Để tự bảo vệ, cây tiết ra một loại kháng thể đặc biệt, qua hàng chục, hàng trăm năm tích tụ và biến tính tạo thành khối trầm hương quý hiếm có mùi thơm đặc trưng đặc biệt sâu lắng.",
-                       "feature":  "Gỗ Dó bầu tích tụ nhựa thơm, mang hương thơm đặc trưng, sâu lắng.",
-                   },
-    "tram-toc":  {
-                     "name":  "Trầm Tốc",
-                     "category":  "Thông Tin Chi Tiết",
-                     "description":  "Trầm Tốc là loại trầm phổ biến, có lượng dầu nhiễm nhẹ trong các thớ gỗ và giá thành vừa phải và thường dùng để làm vòng tay, chuỗi hạt hoặc nhang trầm.",
-                     "feature":  "Lượng dầu nhiễm nhẹ trong thớ gỗ, giá thành vừa phải, thường dùng làm vòng tay, chuỗi hạt hoặc nhang trầm.",
-                 },
-    "tram-ruc":  {
-                     "name":  "Trầm Rục",
-                     "category":  "Thông Tin Chi Tiết",
-                     "description":  "Trầm Rục là loại trầm hương tự nhiên được hình thành từ cây Dó bầu đã chết, ngã đổ và vùi lấp trong đất hoặc bùn ẩm lâu năm. Trải qua quá trình phân hủy tự nhiên, phần gỗ không nhiễm dầu bị mục nát hoàn toàn, chỉ giữ lại phần lõi chứa hàm lượng tinh dầu trầm hương rất cao.",
-                     "feature":  "Hình thành từ cây Dó bầu chết, ngã đổ lâu năm, phần gỗ không nhiễm dầu phân hủy, để lại phần gỗ tích trầm.",
-                 },
-    "tram-loai-4":  {
-                        "name":  "Trầm Loại 4",
-                        "category":  "Thông Tin Chi Tiết",
-                        "description":  "Trầm loại 4 là phân cấp trầm hương có lượng tinh dầu thấm vào thớ gỗ không nhiều, mùi thơm nhẹ hoặc ít đậm, gỗ thường sáng màu hơn và không chìm nước.",
-                        "feature":  "Lượng tinh dầu không nhiều, hương nhẹ hoặc ít đậm, gỗ thường sáng màu và không chìm nước.",
-                    },
-    "tram-loai-5":  {
-                        "name":  "Trầm Loại 5",
-                        "category":  "Thông Tin Chi Tiết",
-                        "description":  "Trầm loại 5 là phân cấp trầm hương có lượng tinh dầu thấm vào thớ gỗ rất ít và mùi thơm nhẹ, gỗ thường sáng màu hơn Trầm loại 4 và không chìm nước.",
-                        "feature":  "Lượng tinh dầu rất ít, hương nhẹ, gỗ thường sáng màu hơn Trầm loại 4 và không chìm nước.",
-                    },
-    "bi-ky-nam":  {
-                      "name":  "Bì Kỳ Nam",
-                      "category":  "Thông Tin Chi Tiết",
-                      "description":  "Bì Kỳ Nam (Kỳ nam) được cửa hàng giới thiệu là sản phẩm gỗ quý hiếm hình thành từ lõi cây Dó bầu (Aquilaria) khi cây bị tổn thương hoặc tác động sinh học. Đây là dạng tích tụ trầm hương ở mức độ cao nhất, sở hữu lượng tinh dầu khổng lồ khiến chất gỗ mềm dẻo như sáp và hoàn toàn chìm nước. Do tỉ lệ xuất hiện trong tự nhiên cực kỳ thấp (chỉ khoảng 1/10.000 đến 1/20.000 cây Dó có trầm mới có Kỳ nam), loại gỗ này được ví như 'biệt dược đắt nhất hành tinh'",
-                      "feature":  "Gỗ Dó bầu quý hiếm, được giới thiệu có mức tích nhựa cao, chất gỗ mềm dẻo như sáp.",
-                  }
-};
-  Object.entries(productCopy).forEach(([id, copy]) => Object.assign(featuredProducts[id], copy));
+  const catalog = window.siteCatalog;
+  const featuredProducts = catalog.byId;
   const escapeHtml = (value) =>
     String(value ?? "").replace(/[&<>"']/g, (character) => ({
       "&": "&amp;",
@@ -121,9 +11,32 @@ document.addEventListener("DOMContentLoaded", () => {
       '"': "&quot;",
       "'": "&#39;",
     })[character]);
-  const apiUrl = (path) => new URL(path, siteRoot).href;
   const assetUrl = (path) =>
     new URL(String(path || "").replace(/^(?:\.\.\/)+/, ""), siteRoot).href;
+  // Static HTML remains a no-JavaScript fallback; catalog data drives live cards.
+  document.querySelectorAll('.product-card[data-product-id]').forEach(card => {
+    const product = featuredProducts[card.dataset.productId];
+    if (!product) return;
+    const title = card.querySelector('.product-card__title');
+    const image = card.querySelector('img');
+    if (title) title.textContent = product.name;
+    if (image) { image.src = assetUrl(product.image); image.alt = product.name; }
+    if (card.hasAttribute('data-category')) card.dataset.category = product.id;
+    card.querySelectorAll('a[href]').forEach(link => {
+      const url = new URL(link.href, location.href);
+      if (url.searchParams.has('product')) { url.searchParams.set('product', product.id); link.href = url.href; }
+    });
+  });
+  const contactProducts = document.querySelector('#contactForm #product');
+  if (contactProducts) {
+    const placeholder = contactProducts.querySelector('option[value=""]');
+    const options = catalog.products.map(product => {
+      const option = document.createElement('option');
+      option.value = product.id; option.textContent = product.name;
+      return option;
+    });
+    contactProducts.replaceChildren(...(placeholder ? [placeholder] : []), ...options);
+  }
   const productDetailInfo = document.querySelector(".product-detail__info[data-product-id]");
   if (productDetailInfo) {
     const requestedProductId =
@@ -249,23 +162,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.querySelector("#productSearch");
     const results = document.querySelector("#searchResults");
 
-    const getCatalogItems = () =>
-      [...document.querySelectorAll(".product-card")]
-        .map((card) => {
-          const name = card.querySelector(".product-card__title")?.textContent?.trim();
-          const image = card.querySelector("img")?.getAttribute("src") || "assets/images/Trầm_01.jpg";
-          const link = card.querySelector("a[href]")?.getAttribute("href") || "products.html";
-          return { name, image, link };
-        })
-        .filter((item) => item.name);
-
     const renderSearchResults = (query) => {
       if (!results) return;
-      const normalized = query.trim().toLowerCase();
-      const items = getCatalogItems();
-      const filtered = !normalized
-        ? items
-        : items.filter((item) => item.name.toLowerCase().includes(normalized));
+      const translate = value => window.siteI18n?.t(value) || value;
+      const filtered = catalog.search(query, translate).map(product => ({
+        name: product.name, image: product.image,
+        link: new URL('pages/product-detail.html?product=' + encodeURIComponent(product.id), siteRoot).href
+      }));
 
       if (!filtered.length) {
         results.innerHTML = '<div class="search-empty">Không tìm thấy sản phẩm phù hợp.</div>';
@@ -276,10 +179,10 @@ document.addEventListener("DOMContentLoaded", () => {
         .slice(0, 6)
         .map(
           (item) => `
-            <a href="${item.link}" class="search-result">
+            <a href="${escapeHtml(item.link)}" class="search-result">
               <img src="${escapeHtml(assetUrl(item.image))}" alt="${escapeHtml(item.name)}" loading="lazy" />
               <div>
-                <strong>${item.name}</strong>
+                <strong>${escapeHtml(item.name)}</strong>
               </div>
             </a>
           `
@@ -368,6 +271,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const closeLightbox = () => {
     if (!lightbox) return;
+    lightboxContent?.querySelectorAll("video").forEach(video => video.pause());
     lightbox.classList.remove("is-open");
     lightbox.setAttribute("aria-hidden", "true");
     if (lightboxContent) lightboxContent.innerHTML = "";
@@ -381,6 +285,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   document.querySelectorAll("img:not(.product-detail__thumbs img), video").forEach((media) => {
+    if (media.closest("a, button")) return;
     media.addEventListener("click", () => {
       if (media.tagName.toLowerCase() === "video") {
         const videoCopy = media.cloneNode(true);
