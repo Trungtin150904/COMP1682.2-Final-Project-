@@ -1,0 +1,124 @@
+/* Responsive styles. Load after desktop.css so mobile overrides take precedence. */
+@media (max-width: 1199px) {
+  .container {
+    width: min(var(--container-width), calc(100% - 1.5rem));
+  }
+
+  .nav {
+    gap: 0.8rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+.about-brand__layout,
+  .about-story,
+  .commitment__inner,
+  .contact-page__grid,
+  .product-detail__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .header__inner {
+    position: relative;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: min(280px, 82vw);
+    padding: 1rem 1.2rem 1.4rem;
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 18px 40px rgba(25, 17, 13, 0.12);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(12px);
+    transition: opacity var(--transition), transform var(--transition);
+  }
+
+  .nav.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  .hero {
+    min-height: 560px;
+  }
+
+  .hero__content {
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .hero__actions,
+  .hero__stats {
+    justify-content: center;
+  }
+
+  .hero__stats {
+    gap: 1rem 1.3rem;
+  }
+
+  .about-brand__layout,
+  .process-gallery,
+  .product-grid,
+  .products-highlight .product-grid,
+  .container.footer__grid,
+  .category-grid,
+  .trust-grid,
+  .stat-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .about-commitment {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .product-card__footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .floating-contact {
+    right: 0.75rem;
+    bottom: 1rem;
+  }
+
+  .floating-contact__item {
+    width: 48px;
+    height: 48px;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .promo-banner__box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-detail__thumbs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

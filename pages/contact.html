@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Liên hệ với Nha Trầm để tư vấn trầm hương nguyên chất, đặt hàng hoặc giải đáp thắc mắc về sản phẩm."
+    />
+    <title>Liên Hệ | Nha Trầm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/desktop.css?v=brand-script-20261023" />
+    <link rel="stylesheet" href="../css/mobile.css?v=product-cutouts-20261021" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a href="../index.html" class="brand" aria-label="Trang chủ Nha Trầm">
+          <span class="brand__mark"><img src="../assets/images/logo.png?v=brand-20261015" alt="" width="80" height="80" /></span>
+          <span class="brand__text">
+            <strong class="brand__wordmark">Trầm Hương Khánh Hòa</strong>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Menu điều hướng chính">
+          <a href="../index.html" class="nav__link">Trang chủ</a>
+          <a href="about.html" class="nav__link">Giới thiệu</a>
+          <a href="products.html" class="nav__link">Sản phẩm</a>
+          <a href="video.html" class="nav__link">Video</a>
+          <a href="contact.html" class="nav__link is-active">Liên hệ</a>
+        </nav>
+        <div class="header__actions">
+          <button class="icon-btn" aria-label="Tìm kiếm">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M10.5 3a7.5 7.5 0 015.9 12.8l4.3 4.3 1.4-1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"
+              />
+            </svg>
+          </button>
+          <div class="language-switcher" role="group" aria-label="Ngôn ngữ / Language"><button type="button" class="language-switcher__button" data-language="vi" lang="vi" aria-label="Tiếng Việt" title="Tiếng Việt" aria-pressed="true"><img src="../assets/images/flag-vi.svg" width="24" height="16" alt="" /></button><button type="button" class="language-switcher__button" data-language="en" lang="en" aria-label="English" title="English" aria-pressed="false"><img src="../assets/images/flag-en.svg" width="24" height="16" alt="" /></button></div>
+          <button
+            class="mobile-menu-toggle"
+            aria-label="Mở menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero page-hero--contact">
+        <div class="container">
+          <span class="eyebrow">Liên hệ</span>
+          <h1>Hãy trò chuyện với chúng tôi về hương trầm của bạn</h1>
+        </div>
+      </section>
+
+      <section class="section contact-page">
+        <div class="container contact-page__grid">
+          <div class="contact-info">
+            <h2>Thông tin liên hệ</h2>
+            <ul>
+              <li><strong>Người liên hệ:</strong> Lê Châu Chính</li>
+              <li><strong>Hotline:</strong> <a href="tel:0975392498">0975 392 498</a></li>
+              <li><strong>Email:</strong> <a href="mailto:cskh@tramhuongkhanhhoa.net.vn">cskh@tramhuongkhanhhoa.net.vn</a></li>
+              <li>
+                <strong>Địa chỉ:</strong> Cơ sở Trầm Hương Khánh Hòa, 120 Lê Duẩn, xã
+                Ninh Sơn, tỉnh Khánh Hòa
+              </li>
+            </ul>
+            <div class="map-placeholder">
+              <img
+                src="../assets/images/tramtoc-tach-nen.png"
+                alt="Bản đồ địa chỉ của Nha Trầm"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <label for="product">Sản phẩm quan tâm</label>
+              <select id="product" name="product">
+                <option value="">Chọn sản phẩm muốn tư vấn</option>
+                <option value="tram-huong">Trầm hương</option>
+                <option value="tram-loai-4">Trầm loại 4</option>
+                <option value="tram-loai-5">Trầm loại 5</option>
+                <option value="tram-ruc">Trầm rục</option>
+                <option value="tram-toc">Trầm tốc</option>
+                <option value="bi-ky-nam">Bì Kỳ Nam</option>
+              </select>
+            </div>
+            <p
+              class="contact-form__context"
+              id="productContactContext"
+              aria-live="polite"
+              hidden
+            ></p>
+            <div class="form-row">
+              <label for="name">Họ và tên</label>
+              <input
+                id="name"
+                name="name" maxlength="100" required
+                type="text"
+                autocomplete="name" placeholder="Nhập họ tên"
+              />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email" maxlength="254" required
+                type="email"
+                autocomplete="email" placeholder="Nhập email"
+              />
+            </div>
+            <div class="form-row">
+              <label for="phone">Số điện thoại</label>
+              <input
+                id="phone"
+                name="phone" maxlength="40"
+                type="tel"
+                autocomplete="tel" placeholder="Nhập số điện thoại"
+              />
+            </div>
+            <div class="form-row">
+              <label for="subject">Chủ đề</label>
+              <input
+                id="subject"
+                name="subject" maxlength="150"
+                type="text"
+                placeholder="Ví dụ: Tư vấn trầm hương"
+              />
+            </div>
+            <div class="form-row">
+              <label for="message">Nội dung</label>
+              <textarea
+                id="message"
+                name="message" maxlength="5000" required
+                rows="5"
+                placeholder="Nhắn cho chúng tôi..."
+              ></textarea>
+            </div>
+            <div class="contact-form__trap" aria-hidden="true"><label for="contactWebsite">Website</label><input id="contactWebsite" name="website" type="text" tabindex="-1" autocomplete="off" /></div>
+            <p class="contact-form__privacy">Thông tin của bạn chỉ được dùng để phản hồi yêu cầu liên hệ.</p>
+            <div class="contact-form__verification" data-contact-verification></div>
+            <p class="contact-form__status" data-contact-status role="status" aria-live="polite" hidden></p>
+            <noscript><p>Vui lòng bật JavaScript hoặc gửi email trực tiếp đến <a href="mailto:cskh@tramhuongkhanhhoa.net.vn">cskh@tramhuongkhanhhoa.net.vn</a>.</p></noscript>
+            <button class="btn btn--primary" type="submit" disabled>Gửi liên hệ</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__col">
+          <a href="index.html" class="brand brand--footer">
+            <span class="brand__mark"><img src="../assets/images/logo.png?v=brand-20261015" alt="" width="80" height="80" /></span>
+            <span class="brand__text">
+              <strong class="brand__wordmark">Trầm Hương Khánh Hòa</strong>
+            </span>
+          </a>
+      <p>                                          
+      </p>
+         <p>
+            Vườn trầm Khánh Hòa mang đến hương trầm thiên nhiên, tinh túy từ rừng và tay
+            nghề thủ công bền bỉ.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h3>Liên hệ</h3>
+          <ul>
+            <li>
+              Cơ sở Trầm Hương Khánh Hòa, 120 Lê Duẩn, xã Ninh Sơn, tỉnh Khánh Hòa
+            </li>
+            <li>Điện thoại: 0975 392 498</li>
+            <li>Email: <a href="mailto:cskh@tramhuongkhanhhoa.net.vn">cskh@tramhuongkhanhhoa.net.vn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <p>© 2026 Trầm Hương Khánh Hòa.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/i18n.js?v=contact-mail-20261022"></script>
+    <script src="../js/main.js?v=contact-mail-20261022"></script>
+    <script src="../js/contact.js?v=contact-mail-20261022"></script>
+  </body>
+</html>
