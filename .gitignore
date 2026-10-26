@@ -5,3 +5,11 @@ node_modules/
 .env
 .env.*
 !.env.example
+
+# ASP.NET Core local build and secrets
+**/bin/
+**/obj/
+backend/appsettings.Local.json
+*.bak
+*.mdf
+*.ldf

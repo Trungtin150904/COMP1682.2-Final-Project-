@@ -2,8 +2,8 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const catalog = require('../js/catalog.js');
-const root = path.resolve(__dirname,'..');
+const catalog = require('../../frontend/js/catalog.js');
+const root = path.resolve(__dirname,'../../frontend');
 test('catalog IDs and local images are complete and unique', () => {
   assert.equal(catalog.products.length,6);
   assert.equal(new Set(catalog.products.map(p=>p.id)).size,6);

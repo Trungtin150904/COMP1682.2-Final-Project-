@@ -1,14 +1,11 @@
 {
   "name": "comp1682.2-final-project-",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "test": "tests"
-  },
+  "description": "Local Final Project: HTML/CSS/JavaScript frontend, ASP.NET Core backend, SQL Server database.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test tests/frontend/*.test.cjs tests/frontend/*.test.mjs",
+    "start": "dotnet run --project backend/TramHuong.Api.csproj",
+    "test:api": "node --test tests/backend/*.test.cjs"
   },
   "repository": {
     "type": "git",
@@ -21,8 +18,5 @@
   "bugs": {
     "url": "https://github.com/Trungtin150904/COMP1682.2-Final-Project-/issues"
   },
-  "homepage": "https://github.com/Trungtin150904/COMP1682.2-Final-Project-#readme",
-  "devDependencies": {
-    "wrangler": "^4.152.0"
-  }
+  "homepage": "https://github.com/Trungtin150904/COMP1682.2-Final-Project-#readme"
 }

@@ -1,10 +1,8 @@
-# Mô hình dữ liệu Trầm Hương — phiên bản 1
+# Mô hình dữ liệu Trầm Hương — SQL Server
 
 ## Phạm vi và trạng thái
 
-Đây là thiết kế để bắt đầu database và quản trị cho website tư vấn trầm hương có dẫn nguồn. Chưa tạo database trên cloud, chưa tạo tài khoản, chưa nối website hoặc thay `js/catalog.js`. Chưa có API, màn hình quản trị, xác thực hoặc AI mới. SQL được kiểm tra với SQLite cục bộ trong bộ nhớ; cần thử môi trường D1 trước triển khai.
-
-Thiết kế giữ HTML/JavaScript và Cloudflare Pages Functions đang có. SQL dùng kiểu SQLite để có thể đi tiếp với D1. Migration nằm trong `migrations/`, không phải mã chạy trên trình duyệt. Không đưa migration, dữ liệu nội bộ và tests vào thư mục output tĩnh khi cấu hình deployment sau này.
+Bản Final Project chạy local: frontend HTML/CSS/JavaScript trong `frontend/`, backend ASP.NET Core trong `backend/`, database SQL Server `TramHuongFyp` quản lý bằng SSMS. Schema thực thi là `database/sqlserver/001_schema.sql`; seed và inbox liên hệ nằm ở hai migration kế tiếp. API categories/health và lưu liên hệ đã hoạt động. Quản trị và AI chưa triển khai.
 
 ## 1. Phân biệt nhóm trầm và sản phẩm
 
@@ -59,7 +57,7 @@ erDiagram
 
 Luồng `draft → published → archived`. Backend chỉ công khai khi: nhóm đang công khai; có tên, SKU, mô tả, quy cách phù hợp và ít nhất một ảnh chính; giá nhất quán; thông tin kiểm chứng có bằng chứng đã duyệt từ nguồn đang được duyệt. Khi chưa có bằng chứng cho đặc tính cụ thể thì bỏ khẳng định hoặc để nháp, không dựa vào AI để điền.
 
-SQL kiểm tra khóa, giá, enum và tối đa một ảnh chính. **Điều kiện xuất bản sản phẩm phải được triển khai tại API**, chưa có trigger thực thi toàn bộ các điều kiện trên. Sửa sản phẩm đang công khai phải chuyển về nháp trước để duyệt lại. Bản đầu không lưu lịch sử đầy đủ của sản phẩm; cần bổ sung bảng phiên bản/audit nếu rubric yêu cầu.
+SQL Server kiểm tra khóa, giá, các tập giá trị và tối đa một ảnh chính. **Điều kiện xuất bản sản phẩm phải được triển khai tại API**, chưa có trigger thực thi toàn bộ các điều kiện trên. Sửa sản phẩm đang công khai phải chuyển về nháp trước để duyệt lại. Bản đầu không lưu lịch sử đầy đủ của sản phẩm; cần bổ sung bảng phiên bản/audit nếu rubric yêu cầu.
 
 ### Nguồn và kiến thức
 
@@ -106,11 +104,11 @@ Nội dung lưu dạng plain text trước; khi hiển thị dùng textContent. 
 | `/api/admin/sources` | Tạo và kiểm duyệt nguồn |
 | `/api/admin/knowledge/:id/revisions` | Tạo phiên bản và gửi/duyệt/rút bản |
 
-Trả lỗi JSON nhất quán; version cập nhật theo optimistic concurrency để tránh hai tab ghi đè. Public API không trả bản nháp, nguồn nội bộ hoặc trường quản trị. Form liên hệ `/api/contact` giữ nguyên; chưa lưu PII/email vào database này. `_routes.json` hiện chỉ mở API contact, phải bổ sung routes khi thực sự viết các API mới.
+Trả lỗi JSON nhất quán; version cập nhật theo optimistic concurrency để tránh hai tab ghi đè. Public API không trả bản nháp, nguồn nội bộ hoặc trường quản trị. Form liên hệ `/api/contact` lưu yêu cầu vào `contact_messages`. Backend chỉ lắng nghe local; chưa có public API đọc inbox.
 
 ## 7. Lộ trình chuyển từ catalog hiện tại
 
-1. Tạo database **local/dev**; áp dụng `0001_catalog_knowledge.sql`, rồi `0002_seed_categories.sql`. Seed chỉ nhóm và từ vựng nhu cầu; chưa có sản phẩm, admin, nguồn hoặc bài giả.
+1. Tạo database **local/dev**; áp dụng `database/sqlserver/001_schema.sql`, rồi `002_seed_categories.sql` và `003_local_contact.sql`. Seed chỉ nhóm và từ vựng nhu cầu; chưa có sản phẩm, admin, nguồn hoặc bài giả.
 2. Chọn auth và tạo tài khoản đầu qua quy trình quản trị an toàn; nhập vài mẫu hàng đã xác nhận ở trạng thái draft.
 3. Nhập nguồn, tạo bài/FAQ với các đoạn và bằng chứng; thực hiện duyệt.
 4. Xây public API và quản trị. Adapter đổi dữ liệu API sang giao diện hiện có; `category` cũ là nhãn hiển thị, không dùng làm category_id.
@@ -120,10 +118,9 @@ Trả lỗi JSON nhất quán; version cập nhật theo optimistic concurrency 
 
 ## 8. Kiểm tra
 
-Chạy `node --test tests/data-model.test.cjs` ở gốc dự án (cần Node có `node:sqlite`; môi trường hiện tại hỗ trợ). Test tạo database trong bộ nhớ, không đụng database thật. Bao gồm migration/seed, khóa ngoại, giá, ảnh chính, điều kiện duyệt, bản nháp không công khai và thu hồi nguồn.
+- `npm test`: catalog, đường dẫn HTML và form frontend.
+- `dotnet build backend/TramHuong.Api.csproj`: biên dịch backend.
+- Khi backend chạy: `npm run test:api` kiểm tra API SQL Server và bảo vệ file nội bộ.
+- Xem `SQL-SERVER-SETUP.md` để tạo database và chạy kiểm tra SSMS.
 
-Chưa kiểm thử Cloudflare D1 thực tế, chưa có migration rollback vận hành. Khi nối D1, dùng migration tuần tự và backup trước production. Không sửa migration đã chạy trên production; tạo migration tiếp theo.
-
-Tham khảo nền tảng:
-- https://developers.cloudflare.com/d1/sql-api/foreign-keys/
-- https://developers.cloudflare.com/d1/reference/migrations/
+Chưa có test tự động đầy đủ cho tất cả ràng buộc T-SQL. Migration đã áp dụng phải giữ nguyên; nếu thay đổi schema thì thêm migration mới. Sửa nội dung đã duyệt và phân quyền là trách nhiệm API quản trị chưa triển khai.
