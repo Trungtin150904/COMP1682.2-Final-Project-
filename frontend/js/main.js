@@ -20,8 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const title = card.querySelector('.product-card__title');
     const image = card.querySelector('img');
     if (title) title.textContent = product.name;
-    if (image) { image.src = assetUrl(product.image); image.alt = product.name; }
-    if (card.hasAttribute('data-category')) card.dataset.category = product.id;
+    if (image && product.image) { image.src = assetUrl(product.image); image.alt = product.name; }
+    const price = card.querySelector('.product-card__price');
+    if (price && Number.isFinite(product.priceVnd)) price.textContent = new Intl.NumberFormat('vi-VN').format(product.priceVnd) + ' ₫';
+    if (card.hasAttribute('data-category')) card.dataset.category = product.filterGroup || product.id;
     card.querySelectorAll('a[href]').forEach(link => {
       const url = new URL(link.href, location.href);
       if (url.searchParams.has('product')) { url.searchParams.set('product', product.id); link.href = url.href; }
@@ -30,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const contactProducts = document.querySelector('#contactForm #product');
   if (contactProducts) {
     const placeholder = contactProducts.querySelector('option[value=""]');
-    const options = catalog.products.map(product => {
+    const options = catalog.products.filter(product => !product.categoryId).map(product => {
       const option = document.createElement('option');
       option.value = product.id; option.textContent = product.name;
       return option;
@@ -52,7 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
       productDetailInfo.querySelector("[data-product-description]").textContent = product.description;
       const mainImage = document.querySelector("[data-product-main-image]");
       const thumbnails = document.querySelector("[data-product-thumbnails]");
-      const productImages = [...new Set([product.image, ...(product.images || [])])];
+      const productImages = [...new Set([product.image, ...(product.images || [])].filter(Boolean))];
+      if (productImages.length) {
       const previous = document.querySelector("[data-gallery-prev]");
       const next = document.querySelector("[data-gallery-next]");
       const counter = document.querySelector("[data-image-count]");
@@ -99,7 +102,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
       selectImage(0);
-      const contactHref = `contact.html?product=${encodeURIComponent(requestedProductId)}`;
+      } else {
+        const gallery = document.querySelector('.product-detail__gallery');
+        const placeholder = document.createElement('p');
+        placeholder.className = 'product-detail__empty-image';
+        placeholder.textContent = 'Chưa thêm ảnh sản phẩm';
+        gallery.replaceChildren(placeholder);
+      }
+      const detailPrice = document.querySelector('[data-product-price]');
+      if (detailPrice && Number.isFinite(product.priceVnd)) detailPrice.textContent = new Intl.NumberFormat('vi-VN').format(product.priceVnd) + ' ₫';
+      const contactHref = `contact.html?product=${encodeURIComponent(product.categoryId || requestedProductId)}`;
       productDetailInfo.querySelector("[data-product-contact]").href = contactHref;
 
       const specs = productDetailInfo.querySelector("[data-product-specs]");
@@ -180,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .map(
           (item) => `
             <a href="${escapeHtml(item.link)}" class="search-result">
-              <img src="${escapeHtml(assetUrl(item.image))}" alt="${escapeHtml(item.name)}" loading="lazy" />
+              ${item.image ? `<img src="${escapeHtml(assetUrl(item.image))}" alt="${escapeHtml(item.name)}" loading="lazy" />` : '<span class="search-result__empty-image" aria-hidden="true">—</span>'}
               <div>
                 <strong>${escapeHtml(item.name)}</strong>
               </div>

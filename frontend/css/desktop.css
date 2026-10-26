@@ -1948,10 +1948,10 @@ body { background-color: var(--page-surface); }
 .contact-form button:disabled { opacity: .6; cursor: not-allowed; transform: none; }
 .contact-info a, .footer__col a[href^="mailto:"] { overflow-wrap: anywhere; }
 
-/* Product catalog: six products in balanced rows, with aligned actions. */
+/* Product catalog: four desktop columns, with aligned actions. */
 .products-page main > .section,
 .about-page main > .section { padding-block: clamp(2.5rem, 4vw, 4rem); }
-.products-page .product-grid--catalog { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.products-page .product-grid--catalog { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .products-page .product-card { display: flex; flex-direction: column; min-width: 0; }
 .products-page .product-card__body { display: flex; flex-direction: column; flex: 1; }
 .products-page .product-card__footer { margin-top: auto; }
@@ -2019,3 +2019,13 @@ body { background-color: var(--page-surface); }
 @media (min-width: 901px) {
   .about-page #knowledge-tram-huong .incense-knowledge__intro-copy { grid-column: 2; grid-row: 1 / 3; align-self: center; }
 }
+
+/* Catalog cards: price and optional image. */
+.product-card__price { color: #986522; font-size: 1.15rem; font-weight: 700; line-height: 1.5; }
+.products-page .product-card__media { aspect-ratio: 1 / 1; }
+.product-image-slot { display: grid; place-items: center; background: var(--photo-surface, #eee8df); color: #62564f; }
+.products-page .product-image-slot img { width: 100%; height: 100%; object-fit: contain; }
+.product-image-slot img:not([src]), .product-image-slot img[src=""] { display: none; }
+.product-image-slot:has(img[src]:not([src=""])) > span { display: none; }
+.product-detail__empty-image { display: grid; place-items: center; min-height: 300px; margin: 0; background: var(--photo-surface, #eee8df); color: #62564f; }
+.search-result__empty-image { display: grid; place-items: center; width: 56px; height: 56px; background: #eee8df; }

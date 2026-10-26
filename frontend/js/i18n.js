@@ -172,7 +172,7 @@ Tìm đúng mẫu bạn cần|Find your ideal piece
 Hình ảnh giới thiệu giúp bạn tham khảo kiểu dáng. Hãy trao đổi với cửa hàng về mẫu hiện có, kích thước, trọng lượng và hương thực tế trước khi lựa chọn.|These photographs show the appearance of the pieces. Before choosing, ask about current stock, dimensions, weight and actual fragrance.
 Xem các sản phẩm khác|Explore other products
 Các loại trầm hương Khánh Hòa|Our Khanh Hoa agarwood collections
-Khám phá bộ sưu tập|Explore the collection
+Phôi Trầm|Agarwood blanks
 Chọn dòng trầm bạn quan tâm|Choose your agarwood variety
 Tất cả|All products
 Trầm hương tự nhiên Khánh Hòa|Natural agarwood from Khanh Hoa

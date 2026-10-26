@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/desktop.css?v=brand-script-20261023" />
+    <link rel="stylesheet" href="../css/desktop.css?v=products-20261027" />
     <link rel="stylesheet" href="../css/mobile.css?v=layout-audit-20261022" />
   </head>
   <body class="products-page">
@@ -63,7 +63,7 @@
 
       <section class="section">
         <div class="container">
-          <div class="catalog-filter"><div class="catalog-filter__heading"><span>Khám phá bộ sưu tập</span><p>Chọn dòng trầm bạn quan tâm</p></div><div class="product-filters" role="group" aria-label="Lọc sản phẩm">
+          <div class="catalog-filter"><div class="catalog-filter__heading"><span>Chọn dòng trầm bạn quan tâm</span></div><div class="product-filters" role="group" aria-label="Lọc sản phẩm">
             <button
               class="filter-btn is-active"
               type="button"
@@ -71,29 +71,16 @@
             >
               Tất cả
             </button>
-            <button class="filter-btn" type="button" data-filter="tram-huong">
-              Trầm hương
-            </button>
-            <button class="filter-btn" type="button" data-filter="tram-loai-4">
-              Trầm loại 4
-            </button>
-            <button class="filter-btn" type="button" data-filter="tram-loai-5">
-              Trầm loại 5
-            </button>
-            <button class="filter-btn" type="button" data-filter="tram-ruc">
-              Trầm rục
-            </button>
-            <button class="filter-btn" type="button" data-filter="tram-toc">
-              Trầm tốc
-            </button>
+            <button class="filter-btn" type="button" data-filter="phoi-tram">Phôi Trầm</button>
             <button class="filter-btn" type="button" data-filter="bi-ky-nam">
               Bì Kỳ Nam
             </button>
+            <button class="filter-btn" type="button" data-filter="vong-chuoi">Vòng và chuỗi</button>
+            <button class="filter-btn" type="button" data-filter="thanh-tram">Thanh trầm</button>
           </div>
-
           </div><!-- catalog-filter -->
           <div class="product-grid product-grid--catalog">
-            <article class="product-card" data-product-id="tram-huong" data-category="tram-huong">
+            <article class="product-card" data-product-id="tram-huong" data-category="phoi-tram">
               <div class="product-card__media">
                 <img
                   src="../assets/images/tramhuong-tach-nen.png"
@@ -103,7 +90,7 @@
               </div>
               <div class="product-card__body">
                 <h3 class="product-card__title">Trầm hương</h3>
-                <p class="product-card__meta">Trầm hương tự nhiên Khánh Hòa</p>
+                <p class="product-card__price">1.000.000 ₫</p>
                 <div class="product-card__footer">
                   <a
                     class="product-card__cta"
@@ -114,7 +101,7 @@
               </div>
             </article>
 
-            <article class="product-card" data-product-id="tram-loai-4" data-category="tram-loai-4">
+            <article class="product-card" data-product-id="tram-loai-4" data-category="phoi-tram">
               <div class="product-card__media">
                 <img
                   src="../assets/images/tram_loai4-tach-nen.png"
@@ -124,7 +111,7 @@
               </div>
               <div class="product-card__body">
                 <h3 class="product-card__title">Trầm loại 4</h3>
-                <p>Lượng tinh dầu không nhiều, hương nhẹ hoặc ít đậm, gỗ thường sáng màu và không chìm nước.</p>
+                <p class="product-card__price">700.000 ₫</p>
                 <div class="product-card__footer">
                   <a
                     class="product-card__cta"
@@ -135,7 +122,7 @@
               </div>
             </article>
 
-            <article class="product-card" data-product-id="tram-loai-5" data-category="tram-loai-5">
+            <article class="product-card" data-product-id="tram-loai-5" data-category="phoi-tram">
               <div class="product-card__media">
                 <img
                   src="../assets/images/tram_loai5-tach-nen.png"
@@ -145,7 +132,7 @@
               </div>
               <div class="product-card__body">
                 <h3 class="product-card__title">Trầm loại 5</h3>
-                <p>Lượng tinh dầu rất ít, hương nhẹ, gỗ thường sáng màu hơn Trầm loại 4 và không chìm nước.</p>
+                <p class="product-card__price">500.000 ₫</p>
                 <div class="product-card__footer">
                   <a
                     class="product-card__cta"
@@ -156,7 +143,7 @@
               </div>
             </article>
 
-            <article class="product-card" data-product-id="tram-ruc" data-category="tram-ruc">
+            <article class="product-card" data-product-id="tram-ruc" data-category="phoi-tram">
               <div class="product-card__media">
                 <img
                   src="../assets/images/tramruc.jpg"
@@ -166,7 +153,7 @@
               </div>
               <div class="product-card__body">
                 <h3 class="product-card__title">Trầm rục</h3>
-                <p class="product-card__meta">Dòng trầm rục tự nhiên</p>
+                <p class="product-card__price">1.500.000 ₫</p>
                 <div class="product-card__footer">
                   <a
                     class="product-card__cta"
@@ -177,7 +164,7 @@
               </div>
             </article>
 
-            <article class="product-card" data-product-id="tram-toc" data-category="tram-toc">
+            <article class="product-card" data-product-id="tram-toc" data-category="phoi-tram">
               <div class="product-card__media">
                 <img
                   src="../assets/images/tramtoc-tach-nen.png"
@@ -187,7 +174,7 @@
               </div>
               <div class="product-card__body">
                 <h3 class="product-card__title">Trầm tốc</h3>
-                <p class="product-card__meta">Dòng trầm tốc tự nhiên</p>
+                <p class="product-card__price">800.000 ₫</p>
                 <div class="product-card__footer">
                   <a
                     class="product-card__cta"
@@ -208,13 +195,178 @@
               </div>
               <div class="product-card__body">
                 <h3 class="product-card__title">Bì Kỳ Nam</h3>
-                <p>Gỗ Dó bầu quý hiếm, được giới thiệu có mức tích nhựa cao, chất gỗ mềm dẻo như sáp.</p>
+                <p class="product-card__price">5.000.000 ₫</p>
                 <div class="product-card__footer">
                   <a
                     class="product-card__cta"
                     href="product-detail.html?product=bi-ky-nam"
                     >Xem chi tiết</a
                   >
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="chuoi-tram-may-man" data-category="vong-chuoi">
+              <div class="product-card__media product-image-slot">
+                <!-- Ảnh được cấu hình tại trường image của sản phẩm trong js/catalog.js. -->
+                <img data-image-slot="chuoi-tram-may-man" alt="Chuỗi Trầm Hương May Mắn (04mm - 216 hạt)" loading="lazy" />
+                <span>Chưa thêm ảnh</span>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Chuỗi Trầm Hương May Mắn (04mm - 216 hạt)</h3>
+                <p class="product-card__price">990.000 ₫</p>
+                <div class="product-card__footer">
+                  <a class="product-card__cta" href="product-detail.html?product=chuoi-tram-may-man">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="vong-tram-may-man" data-category="vong-chuoi">
+              <div class="product-card__media product-image-slot">
+                <!-- Ảnh được cấu hình tại trường image của sản phẩm trong js/catalog.js. -->
+                <img data-image-slot="vong-tram-may-man" alt="Vòng Trầm Hương May Mắn (10mm - 18 hạt)" loading="lazy" />
+                <span>Chưa thêm ảnh</span>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Vòng Trầm Hương May Mắn (10mm - 18 hạt)</h3>
+                <p class="product-card__price">990.000 ₫</p>
+                <div class="product-card__footer">
+                  <a class="product-card__cta" href="product-detail.html?product=vong-tram-may-man">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="atc-tram-may-man" data-category="vong-chuoi">
+              <div class="product-card__media product-image-slot">
+                <!-- Ảnh được cấu hình tại trường image của sản phẩm trong js/catalog.js. -->
+                <img data-image-slot="atc-tram-may-man" alt="ATC - Trầm Hương May Mắn (12mm - 16 hạt)" loading="lazy" />
+                <span>Chưa thêm ảnh</span>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">ATC - Trầm Hương May Mắn (12mm - 16 hạt)</h3>
+                <p class="product-card__price">990.000 ₫</p>
+                <div class="product-card__footer">
+                  <a class="product-card__cta" href="product-detail.html?product=atc-tram-may-man">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="vong-tram-thinh-vuong" data-category="vong-chuoi">
+              <div class="product-card__media product-image-slot">
+                <!-- Ảnh được cấu hình tại trường image của sản phẩm trong js/catalog.js. -->
+                <img data-image-slot="vong-tram-thinh-vuong" alt="Vòng Trầm Thịnh Vượng" loading="lazy" />
+                <span>Chưa thêm ảnh</span>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Vòng Trầm Thịnh Vượng</h3>
+                <p class="product-card__price">1.290.000 ₫</p>
+                <div class="product-card__footer">
+                  <a class="product-card__cta" href="product-detail.html?product=vong-tram-thinh-vuong">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="thanh-tram-tai-loc" data-category="thanh-tram">
+              <div class="product-card__media product-image-slot">
+                <!-- Ảnh được cấu hình tại trường image của sản phẩm trong js/catalog.js. -->
+                <img data-image-slot="thanh-tram-tai-loc" alt="Thanh Trầm Hương Tài Lộc" loading="lazy" />
+                <span>Chưa thêm ảnh</span>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Thanh Trầm Hương Tài Lộc</h3>
+                <p class="product-card__price">1.150.000 ₫</p>
+                <div class="product-card__footer">
+                  <a class="product-card__cta" href="product-detail.html?product=thanh-tram-tai-loc">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="thanh-tram-phat-loc" data-category="thanh-tram">
+              <div class="product-card__media product-image-slot">
+                <!-- Ảnh được cấu hình tại trường image của sản phẩm trong js/catalog.js. -->
+                <img data-image-slot="thanh-tram-phat-loc" alt="Thanh Trầm Hương Phát Lộc" loading="lazy" />
+                <span>Chưa thêm ảnh</span>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Thanh Trầm Hương Phát Lộc</h3>
+                <p class="product-card__price">1.980.000 ₫</p>
+                <div class="product-card__footer">
+                  <a class="product-card__cta" href="product-detail.html?product=thanh-tram-phat-loc">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="thanh-tram-tai-loc-30" data-category="thanh-tram">
+              <div class="product-card__media product-image-slot">
+                <!-- Ảnh được cấu hình tại trường image của sản phẩm trong js/catalog.js. -->
+                <img data-image-slot="thanh-tram-tai-loc-30" alt="Thanh Trầm Hương Tài Lộc (30 thanh)" loading="lazy" />
+                <span>Chưa thêm ảnh</span>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Thanh Trầm Hương Tài Lộc (30 thanh)</h3>
+                <p class="product-card__price">2.000.000 ₫</p>
+                <div class="product-card__footer">
+                  <a class="product-card__cta" href="product-detail.html?product=thanh-tram-tai-loc-30">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="thanh-ky-nam-tai-loc" data-category="thanh-tram">
+              <div class="product-card__media product-image-slot">
+                <!-- Ảnh được cấu hình tại trường image của sản phẩm trong js/catalog.js. -->
+                <img data-image-slot="thanh-ky-nam-tai-loc" alt="Thanh Kỳ Nam Tài Lộc" loading="lazy" />
+                <span>Chưa thêm ảnh</span>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Thanh Kỳ Nam Tài Lộc</h3>
+                <p class="product-card__price">3.000.000 ₫</p>
+                <div class="product-card__footer">
+                  <a class="product-card__cta" href="product-detail.html?product=thanh-ky-nam-tai-loc">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="thanh-ky-nam-tai-loc-30" data-category="thanh-tram">
+              <div class="product-card__media product-image-slot">
+                <!-- Ảnh được cấu hình tại trường image của sản phẩm trong js/catalog.js. -->
+                <img data-image-slot="thanh-ky-nam-tai-loc-30" alt="Thanh Kỳ Nam Tài Lộc (30 thanh)" loading="lazy" />
+                <span>Chưa thêm ảnh</span>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Thanh Kỳ Nam Tài Lộc (30 thanh)</h3>
+                <p class="product-card__price">3.000.000 ₫</p>
+                <div class="product-card__footer">
+                  <a class="product-card__cta" href="product-detail.html?product=thanh-ky-nam-tai-loc-30">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="thanh-ky-nam-tai-loc-3300" data-category="thanh-tram">
+              <div class="product-card__media product-image-slot">
+                <!-- Ảnh được cấu hình tại trường image của sản phẩm trong js/catalog.js. -->
+                <img data-image-slot="thanh-ky-nam-tai-loc-3300" alt="Thanh Kỳ Nam Tài Lộc" loading="lazy" />
+                <span>Chưa thêm ảnh</span>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Thanh Kỳ Nam Tài Lộc</h3>
+                <p class="product-card__price">3.300.000 ₫</p>
+                <div class="product-card__footer">
+                  <a class="product-card__cta" href="product-detail.html?product=thanh-ky-nam-tai-loc-3300">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="thanh-tram-tai-loc-60" data-category="thanh-tram">
+              <div class="product-card__media product-image-slot">
+                <!-- Ảnh được cấu hình tại trường image của sản phẩm trong js/catalog.js. -->
+                <img data-image-slot="thanh-tram-tai-loc-60" alt="Thanh Trầm Hương Tài Lộc (60 thanh)" loading="lazy" />
+                <span>Chưa thêm ảnh</span>
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Thanh Trầm Hương Tài Lộc (60 thanh)</h3>
+                <p class="product-card__price">5.000.000 ₫</p>
+                <div class="product-card__footer">
+                  <a class="product-card__cta" href="product-detail.html?product=thanh-tram-tai-loc-60">Xem chi tiết</a>
                 </div>
               </div>
             </article>
@@ -258,7 +410,7 @@
     </footer>
 
     <script src="../js/i18n.js?v=contact-mail-20261022"></script>
-    <script src="../js/catalog.js?v=catalog-20261023"></script>
-    <script src="../js/main.js?v=catalog-20261023"></script>
+    <script src="../js/catalog.js?v=products-20261027"></script>
+    <script src="../js/main.js?v=products-20261027"></script>
   </body>
 </html>
