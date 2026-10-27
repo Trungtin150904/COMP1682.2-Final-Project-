@@ -342,6 +342,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
+  // Keep separators horizontal while retaining the serif product typography.
+  document.querySelectorAll('.category-card__content h3, .product-card__title, [data-product-title]').forEach(heading => {
+    const walker = document.createTreeWalker(heading, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => {
+      if (!node.nodeValue.includes(' - ')) return;
+      const fragment = document.createDocumentFragment();
+      node.nodeValue.split(/( - )/).forEach(part => {
+        if (part === ' - ') {
+          const separator = document.createElement('span');
+          separator.className = 'product-name-separator';
+          separator.textContent = ' - ';
+          fragment.appendChild(separator);
+        } else fragment.appendChild(document.createTextNode(part));
+      });
+      node.replaceWith(fragment);
+    });
+  });
+
   const toggleBtn = document.querySelector(".mobile-menu-toggle");
   const nav = document.querySelector(".nav");
 

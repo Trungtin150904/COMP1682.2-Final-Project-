@@ -2029,3 +2029,20 @@ body { background-color: var(--page-surface); }
 .product-image-slot:has(img[src]:not([src=""])) > span { display: none; }
 .product-detail__empty-image { display: grid; place-items: center; min-height: 300px; margin: 0; background: var(--photo-surface, #eee8df); color: #62564f; }
 .search-result__empty-image { display: grid; place-items: center; width: 56px; height: 56px; background: #eee8df; }
+
+/* Cormorant's hyphen is angled; only product separators use the body font. */
+.category-card__content h3 .product-name-separator,
+.product-card__title .product-name-separator,
+[data-product-title] .product-name-separator {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body), sans-serif;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  letter-spacing: normal;
+  text-transform: none;
+}
