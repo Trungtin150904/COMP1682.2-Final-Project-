@@ -221,6 +221,118 @@
     "description": "Thông tin sản phẩm đang được cập nhật. Vui lòng liên hệ để biết thêm chi tiết.",
     "feature": "Thông tin đang cập nhật.",
     "category": "Thông Tin Chi Tiết"
+  },
+  {
+    "id": "vong-tay-tram-huong-8mm-hat-tron-trung-cap",
+    "name": "Vòng Tay Trầm Hương 8mm Hạt Tròn Trung Cấp",
+    "priceVnd": 1800000,
+    "filterGroup": "vong-chuoi",
+    "categoryId": "tram-huong",
+    "image": "assets/images/vong-tay-tram-huong-8mm-hat-tron-trung-cap.png",
+    "images": [
+      "assets/images/vong-tay-tram-huong-8mm-hat-tron-trung-cap.png"
+    ],
+    "description": "Liên hệ cửa hàng để biết thêm thông tin về sản phẩm.",
+    "feature": "8mm Hạt Tròn Trung Cấp",
+    "category": "Vòng và chuỗi"
+  },
+  {
+    "id": "vong-tay-tram-huong-8mm-hat-tron-cao-cap",
+    "name": "Vòng Tay Trầm Hương 8mm Hạt Tròn Cao Cấp",
+    "priceVnd": 3890000,
+    "filterGroup": "vong-chuoi",
+    "categoryId": "tram-huong",
+    "image": "assets/images/vong-tay-tram-huong-8mm-hat-tron-cao-cap.jpg",
+    "images": [
+      "assets/images/vong-tay-tram-huong-8mm-hat-tron-cao-cap.jpg"
+    ],
+    "description": "Liên hệ cửa hàng để biết thêm thông tin về sản phẩm.",
+    "feature": "8mm Hạt Tròn Cao Cấp",
+    "category": "Vòng và chuỗi"
+  },
+  {
+    "id": "chuoi-tram-huong-6mm-108-hat-pho-thong",
+    "name": "Chuỗi Trầm Hương 6mm 108 Hạt Phổ Thông",
+    "priceVnd": 2300000,
+    "filterGroup": "vong-chuoi",
+    "categoryId": "tram-huong",
+    "image": "assets/images/chuoi-tram-huong-6mm-108-hat-pho-thong.jpg",
+    "images": [
+      "assets/images/chuoi-tram-huong-6mm-108-hat-pho-thong.jpg"
+    ],
+    "description": "Liên hệ cửa hàng để biết thêm thông tin về sản phẩm.",
+    "feature": "6mm 108 Hạt Phổ Thông",
+    "category": "Vòng và chuỗi"
+  },
+  {
+    "id": "chuoi-tram-huong-6mm-108-hat-trung-cap",
+    "name": "Chuỗi Trầm Hương 6mm 108 Hạt Trung Cấp",
+    "priceVnd": 3900000,
+    "filterGroup": "vong-chuoi",
+    "categoryId": "tram-huong",
+    "image": "assets/images/chuoi-tram-huong-6mm-108-hat-trung-cap.jpg",
+    "images": [
+      "assets/images/chuoi-tram-huong-6mm-108-hat-trung-cap.jpg"
+    ],
+    "description": "Liên hệ cửa hàng để biết thêm thông tin về sản phẩm.",
+    "feature": "6mm 108 Hạt Trung Cấp",
+    "category": "Vòng và chuỗi"
+  },
+  {
+    "id": "nhang-tram-huong-co-tam-pho-thong",
+    "name": "Nhang Trầm Hương Phổ Thông 30cm Hộp 80 Que",
+    "priceVnd": 50000,
+    "filterGroup": "thanh-tram",
+    "categoryId": "tram-huong",
+    "image": "assets/images/nhang-tram-huong-co-tam-pho-thong.jpg",
+    "images": [
+      "assets/images/nhang-tram-huong-co-tam-pho-thong.jpg"
+    ],
+    "description": "Liên hệ cửa hàng để biết thêm thông tin về sản phẩm.",
+    "feature": "30cm Hộp 80 Que",
+    "category": "Nhang trầm"
+  },
+  {
+    "id": "nhang-tram-huong-co-tam-cao-cap",
+    "name": "Nhang Trầm Hương Cao Cấp 30cm Hộp 100 Que",
+    "priceVnd": 150000,
+    "filterGroup": "thanh-tram",
+    "categoryId": "tram-huong",
+    "image": "assets/images/nhang-tram-huong-co-tam-cao-cap.jpg",
+    "images": [
+      "assets/images/nhang-tram-huong-co-tam-cao-cap.jpg"
+    ],
+    "description": "Liên hệ cửa hàng để biết thêm thông tin về sản phẩm.",
+    "feature": "30cm Hộp 100 Que",
+    "category": "Nhang trầm"
+  },
+  {
+    "id": "nhang-tram-huong-co-tam-trung-cap",
+    "name": "Nhang Trầm Hương Trung Cấp 20cm Hộp 150 Que",
+    "priceVnd": 105000,
+    "filterGroup": "thanh-tram",
+    "categoryId": "tram-huong",
+    "image": "assets/images/nhang-tram-huong-co-tam-trung-cap.jpg",
+    "images": [
+      "assets/images/nhang-tram-huong-co-tam-trung-cap.jpg"
+    ],
+    "description": "Liên hệ cửa hàng để biết thêm thông tin về sản phẩm.",
+    "feature": "20cm Hộp 150 Que",
+    "category": "Nhang trầm"
+  },
+  {
+    "id": "nhang-tram-huong-co-tam-thuong-hang",
+    "name": "Nhang Trầm Hương Thượng Hạng 20cm Hộp 100 Que",
+    "priceVnd": 250000,
+    "filterGroup": "thanh-tram",
+    "categoryId": "tram-huong",
+    "image": "assets/images/nhang-tram-huong-co-tam-thuong-hang.jpg",
+    "images": [
+      "assets/images/nhang-tram-huong-co-tam-thuong-hang.jpg"
+    ],
+    "description": "Liên hệ cửa hàng để biết thêm thông tin về sản phẩm.",
+    "feature": "20cm Hộp 100 Que",
+    "category": "Nhang trầm"
   }
 ];
 

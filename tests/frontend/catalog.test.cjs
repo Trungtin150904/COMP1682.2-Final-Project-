@@ -5,15 +5,15 @@ const path = require('node:path');
 const catalog = require('../../frontend/js/catalog.js');
 const root = path.resolve(__dirname,'../../frontend');
 test('catalog IDs and local images are complete and unique', () => {
-  assert.equal(catalog.products.length,17);
-  assert.equal(new Set(catalog.products.map(p=>p.id)).size,17);
+  assert.equal(catalog.products.length,25);
+  assert.equal(new Set(catalog.products.map(p=>p.id)).size,25);
   for(const p of catalog.products) {
     assert.equal(catalog.byId[p.id],p);
     for(const image of p.images) assert(fs.existsSync(path.join(root,image)),image);
   }
 });
 test('global search handles accents, case, empty input and English names', () => {
-  assert.equal(catalog.search('').length,17);
+  assert.equal(catalog.search('').length,25);
   assert.equal(catalog.search('TRAM LOAI 4')[0].id,'tram-loai-4');
   assert.equal(catalog.search('bì kỳ nam')[0].id,'bi-ky-nam');
   assert.equal(catalog.search('Ruc agarwood',n=>n==='Trầm Rục'?'Ruc agarwood':n)[0].id,'tram-ruc');
