@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (image && product.image) { image.src = assetUrl(product.image); image.alt = product.name; }
     const price = card.querySelector('.product-card__price');
     if (price && Number.isFinite(product.priceVnd)) price.textContent = new Intl.NumberFormat('vi-VN').format(product.priceVnd) + ' ₫';
-    if (card.hasAttribute('data-category')) card.dataset.category = product.filterGroup || product.id;
     card.querySelectorAll('a[href]').forEach(link => {
       const url = new URL(link.href, location.href);
       if (url.searchParams.has('product')) { url.searchParams.set('product', product.id); link.href = url.href; }
@@ -234,22 +233,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const filterButtons = [...document.querySelectorAll(".product-filters .filter-btn")];
-  const catalogCards = [...document.querySelectorAll(".product-grid--catalog .product-card")];
-  filterButtons.forEach((button) => {
-    const category = button.dataset.filter || "all";
-    button.setAttribute("aria-pressed", String(button.classList.contains("is-active")));
-    button.addEventListener("click", () => {
-      filterButtons.forEach((item) => {
-        item.classList.toggle("is-active", item === button);
-        item.setAttribute("aria-pressed", String(item === button));
-      });
-      catalogCards.forEach((card) => {
-        const matches = category === "all" || card.dataset.category === category;
-        card.style.display = matches ? "" : "none";
-      });
-    });
-  });
   const sliderWrap = document.querySelector(".product-slider");
   if (sliderWrap) {
     const productGrid = sliderWrap.querySelector(".product-grid");

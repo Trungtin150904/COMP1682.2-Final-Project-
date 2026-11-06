@@ -89,11 +89,6 @@
     grid-template-columns: 1fr;
   }
 
-  .about-commitment {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
   .product-card__footer {
     flex-direction: column;
     align-items: center;

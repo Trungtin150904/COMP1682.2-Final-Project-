@@ -17,7 +17,8 @@
     />
     <link rel="stylesheet" href="css/desktop.css?v=product-dashes-20261027" />
     <link rel="stylesheet" href="css/mobile.css?v=product-cutouts-20261021" />
-    <link rel="stylesheet" href="css/home.css?v=home-prices-20261027" />
+    <link rel="stylesheet" href="css/home.css?v=featured-only" />
+    <link rel="stylesheet" href="css/store-header.css?v=single-row" />
   </head>
   <body class="home-page">
     <header class="header">
@@ -72,9 +73,7 @@
             <a href="pages/products.html" class="btn btn--primary"
               >Xem Sản Phẩm</a
             >
-            <a href="pages/about.html" class="btn btn--secondary"
-              >Tìm Hiểu Thêm</a
-            >
+            <button type="button" class="btn btn--secondary" data-store-dialog="storeAdvice" aria-haspopup="dialog">Tư vấn chọn trầm (AI)</button>
           </div>
           <ul class="hero__stats" aria-label="Thông số nổi bật">
             <li><strong>100%</strong><span>trầm hương thiên nhiên</span></li>
@@ -84,118 +83,216 @@
         </div>
       </section>
 
-      <section class="section category-showcase section--soft">
+      <section class="section featured-section" aria-labelledby="featuredTitle">
         <div class="container">
-          <div class="section-heading section-heading--center">
-            <span class="eyebrow">Danh mục nổi bật</span>
-            <h2>Khám phá sản phẩm Trầm Hương Khánh Hòa</h2>
+          <div class="featured-heading">
+            <h2 id="featuredTitle">Sản phẩm nổi bật</h2>
+            <div class="featured-heading__aside">
+              <span>Chế tác thủ công từ Ninh Sơn - Khánh Hòa</span>
+              <a href="pages/products.html">Xem tất cả danh mục <span aria-hidden="true">→</span></a>
+            </div>
           </div>
 
-          <div class="category-grid">
-            <article class="category-card">
-              <img
+          <div class="featured-grid">
+            <article class="featured-card">
+              <div class="featured-card__media">
+                <img
                 src="assets/images/vong-tay-tram-huong-8mm-hat-tron-trung-cap.png"
                 alt="Vòng trầm hương"
                 loading="lazy"
               />
-              <div class="category-card__content">
-                <h3>Vòng Tay Trầm Hương 8mm Hạt Tròn Trung Cấp</h3>
-                <p class="home-product-price">1.800.000 VND</p>
-                <a class="product-card__cta" href="pages/product-detail.html?product=vong-tay-tram-huong-8mm-hat-tron-trung-cap">Xem chi tiết</a>
+                <span class="featured-card__badge">Vòng và chuỗi</span>
+              </div>
+              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
+              <h3>Vòng Tay Trầm Hương 8mm Hạt Tròn Trung Cấp</h3>
+              <div class="featured-card__footer">
+                <div class="featured-card__price">
+                  <small>Giá niêm yết</small>
+                  <strong>1.800.000 ₫</strong>
+                </div>
+                <div class="featured-card__actions">
+                  <a class="product-card__cta" href="pages/product-detail.html?product=vong-tay-tram-huong-8mm-hat-tron-trung-cap">Xem chi tiết</a>
+                  <button type="button" class="featured-add" data-cart-add="vong-tay-tram-huong-8mm-hat-tron-trung-cap" aria-label="Thêm Vòng Tay Trầm Hương 8mm Hạt Tròn Trung Cấp vào giỏ hàng" title="Thêm vào giỏ hàng">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article class="category-card">
-              <img
+            <article class="featured-card">
+              <div class="featured-card__media">
+                <img
                 src="assets/images/vong-tay-tram-huong-8mm-hat-tron-cao-cap.jpg"
                 alt="Vòng tay trầm hương 8mm hạt tròn cao cấp"
                 loading="lazy"
               />
-              <div class="category-card__content">
-                <h3>Vòng Tay Trầm Hương 8mm Hạt Tròn Cao Cấp</h3>
-                <p class="home-product-price">3.890.000 VND</p>
-                <a class="product-card__cta" href="pages/product-detail.html?product=vong-tay-tram-huong-8mm-hat-tron-cao-cap">Xem chi tiết</a>
+                <span class="featured-card__badge">Vòng và chuỗi</span>
+              </div>
+              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
+              <h3>Vòng Tay Trầm Hương 8mm Hạt Tròn Cao Cấp</h3>
+              <div class="featured-card__footer">
+                <div class="featured-card__price">
+                  <small>Giá niêm yết</small>
+                  <strong>3.890.000 ₫</strong>
+                </div>
+                <div class="featured-card__actions">
+                  <a class="product-card__cta" href="pages/product-detail.html?product=vong-tay-tram-huong-8mm-hat-tron-cao-cap">Xem chi tiết</a>
+                  <button type="button" class="featured-add" data-cart-add="vong-tay-tram-huong-8mm-hat-tron-cao-cap" aria-label="Thêm Vòng Tay Trầm Hương 8mm Hạt Tròn Cao Cấp vào giỏ hàng" title="Thêm vào giỏ hàng">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article class="category-card">
-              <img
+            <article class="featured-card">
+              <div class="featured-card__media">
+                <img
                 src="assets/images/chuoi-tram-huong-6mm-108-hat-pho-thong.jpg"
                 alt="Chuỗi trầm hương 6mm 108 hạt phổ thông"
                 loading="lazy"
               />
-              <div class="category-card__content">
-                <h3>Chuỗi Trầm Hương 6mm 108 Hạt Phổ Thông</h3>
-                <p class="home-product-price">2.300.000 VND</p>
-                <a class="product-card__cta" href="pages/product-detail.html?product=chuoi-tram-huong-6mm-108-hat-pho-thong">Xem chi tiết</a>
+                <span class="featured-card__badge">Vòng và chuỗi</span>
+              </div>
+              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
+              <h3>Chuỗi Trầm Hương 6mm 108 Hạt Phổ Thông</h3>
+              <div class="featured-card__footer">
+                <div class="featured-card__price">
+                  <small>Giá niêm yết</small>
+                  <strong>2.300.000 ₫</strong>
+                </div>
+                <div class="featured-card__actions">
+                  <a class="product-card__cta" href="pages/product-detail.html?product=chuoi-tram-huong-6mm-108-hat-pho-thong">Xem chi tiết</a>
+                  <button type="button" class="featured-add" data-cart-add="chuoi-tram-huong-6mm-108-hat-pho-thong" aria-label="Thêm Chuỗi Trầm Hương 6mm 108 Hạt Phổ Thông vào giỏ hàng" title="Thêm vào giỏ hàng">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article class="category-card">
-              <img
+            <article class="featured-card">
+              <div class="featured-card__media">
+                <img
                 src="assets/images/chuoi-tram-huong-6mm-108-hat-trung-cap.jpg"
                 alt="Chuỗi trầm hương 6mm 108 hạt trung cấp"
                 loading="lazy"
               />
-              <div class="category-card__content">
-                <h3>Chuỗi Trầm Hương 6mm 108 Hạt Trung Cấp</h3>
-                <p class="home-product-price">3.900.000 ₫</p>
-                <a class="product-card__cta" href="pages/product-detail.html?product=chuoi-tram-huong-6mm-108-hat-trung-cap">Xem chi tiết</a>
+                <span class="featured-card__badge">Vòng và chuỗi</span>
+              </div>
+              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
+              <h3>Chuỗi Trầm Hương 6mm 108 Hạt Trung Cấp</h3>
+              <div class="featured-card__footer">
+                <div class="featured-card__price">
+                  <small>Giá niêm yết</small>
+                  <strong>3.900.000 ₫</strong>
+                </div>
+                <div class="featured-card__actions">
+                  <a class="product-card__cta" href="pages/product-detail.html?product=chuoi-tram-huong-6mm-108-hat-trung-cap">Xem chi tiết</a>
+                  <button type="button" class="featured-add" data-cart-add="chuoi-tram-huong-6mm-108-hat-trung-cap" aria-label="Thêm Chuỗi Trầm Hương 6mm 108 Hạt Trung Cấp vào giỏ hàng" title="Thêm vào giỏ hàng">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article class="category-card">
-              <img
+            <article class="featured-card">
+              <div class="featured-card__media">
+                <img
                 src="assets/images/nhang-tram-huong-co-tam-pho-thong.jpg"
                 alt="Nhang trầm hương có tăm Phổ Thông"
                 loading="lazy"
               />
-              <div class="category-card__content">
-                <h3>Nhang Trầm Hương Phổ Thông 30cm Hộp 80 Que</h3>
-                <p class="home-product-price">50.000 ₫</p>
-                <a class="product-card__cta" href="pages/product-detail.html?product=nhang-tram-huong-co-tam-pho-thong">Xem chi tiết</a>
+                <span class="featured-card__badge">Nhang trầm</span>
+              </div>
+              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
+              <h3>Nhang Trầm Hương Phổ Thông 30cm Hộp 80 Que</h3>
+              <div class="featured-card__footer">
+                <div class="featured-card__price">
+                  <small>Giá niêm yết</small>
+                  <strong>50.000 ₫</strong>
+                </div>
+                <div class="featured-card__actions">
+                  <a class="product-card__cta" href="pages/product-detail.html?product=nhang-tram-huong-co-tam-pho-thong">Xem chi tiết</a>
+                  <button type="button" class="featured-add" data-cart-add="nhang-tram-huong-co-tam-pho-thong" aria-label="Thêm Nhang Trầm Hương Phổ Thông 30cm Hộp 80 Que vào giỏ hàng" title="Thêm vào giỏ hàng">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article class="category-card">
-              <img
+            <article class="featured-card">
+              <div class="featured-card__media">
+                <img
                 src="assets/images/nhang-tram-huong-co-tam-cao-cap.jpg"
                 alt="Nhang trầm hương có tăm Cao Cấp"
                 loading="lazy"
               />
-              <div class="category-card__content">
-                <h3>Nhang Trầm Hương Cao Cấp 30cm Hộp 100 Que</h3>
-                <p class="home-product-price">150.000 ₫</p>
-                <a class="product-card__cta" href="pages/product-detail.html?product=nhang-tram-huong-co-tam-cao-cap">Xem chi tiết</a>
+                <span class="featured-card__badge">Nhang trầm</span>
+              </div>
+              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
+              <h3>Nhang Trầm Hương Cao Cấp 30cm Hộp 100 Que</h3>
+              <div class="featured-card__footer">
+                <div class="featured-card__price">
+                  <small>Giá niêm yết</small>
+                  <strong>150.000 ₫</strong>
+                </div>
+                <div class="featured-card__actions">
+                  <a class="product-card__cta" href="pages/product-detail.html?product=nhang-tram-huong-co-tam-cao-cap">Xem chi tiết</a>
+                  <button type="button" class="featured-add" data-cart-add="nhang-tram-huong-co-tam-cao-cap" aria-label="Thêm Nhang Trầm Hương Cao Cấp 30cm Hộp 100 Que vào giỏ hàng" title="Thêm vào giỏ hàng">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article class="category-card">
-              <img
+            <article class="featured-card">
+              <div class="featured-card__media">
+                <img
                 src="assets/images/nhang-tram-huong-co-tam-trung-cap.jpg"
                 alt="Nhang trầm hương có tăm Trung Cấp"
                 loading="lazy"
               />
-              <div class="category-card__content">
-                <h3>Nhang Trầm Hương Trung Cấp 20cm Hộp 150 Que</h3>
-                <p class="home-product-price">105.000 ₫</p>
-                <a class="product-card__cta" href="pages/product-detail.html?product=nhang-tram-huong-co-tam-trung-cap">Xem chi tiết</a>
+                <span class="featured-card__badge">Nhang trầm</span>
+              </div>
+              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
+              <h3>Nhang Trầm Hương Trung Cấp 20cm Hộp 150 Que</h3>
+              <div class="featured-card__footer">
+                <div class="featured-card__price">
+                  <small>Giá niêm yết</small>
+                  <strong>105.000 ₫</strong>
+                </div>
+                <div class="featured-card__actions">
+                  <a class="product-card__cta" href="pages/product-detail.html?product=nhang-tram-huong-co-tam-trung-cap">Xem chi tiết</a>
+                  <button type="button" class="featured-add" data-cart-add="nhang-tram-huong-co-tam-trung-cap" aria-label="Thêm Nhang Trầm Hương Trung Cấp 20cm Hộp 150 Que vào giỏ hàng" title="Thêm vào giỏ hàng">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+                  </button>
+                </div>
               </div>
             </article>
 
-            <article class="category-card">
-              <img
+            <article class="featured-card">
+              <div class="featured-card__media">
+                <img
                 src="assets/images/nhang-tram-huong-co-tam-thuong-hang.jpg"
                 alt="Nhang trầm hương có tăm Thượng Hạng"
                 loading="lazy"
               />
-              <div class="category-card__content">
-                <h3>Nhang Trầm Hương Thượng Hạng 20cm Hộp 100 Que</h3>
-                <p class="home-product-price">250.000 ₫</p>
-                <a class="product-card__cta" href="pages/product-detail.html?product=nhang-tram-huong-co-tam-thuong-hang">Xem chi tiết</a>
+                <span class="featured-card__badge">Nhang trầm</span>
+              </div>
+              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
+              <h3>Nhang Trầm Hương Thượng Hạng 20cm Hộp 100 Que</h3>
+              <div class="featured-card__footer">
+                <div class="featured-card__price">
+                  <small>Giá niêm yết</small>
+                  <strong>250.000 ₫</strong>
+                </div>
+                <div class="featured-card__actions">
+                  <a class="product-card__cta" href="pages/product-detail.html?product=nhang-tram-huong-co-tam-thuong-hang">Xem chi tiết</a>
+                  <button type="button" class="featured-add" data-cart-add="nhang-tram-huong-co-tam-thuong-hang" aria-label="Thêm Nhang Trầm Hương Thượng Hạng 20cm Hộp 100 Que vào giỏ hàng" title="Thêm vào giỏ hàng">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+                  </button>
+                </div>
               </div>
             </article>
-
           </div>
         </div>
       </section>
@@ -407,5 +504,6 @@
     <script src="js/i18n.js?v=contact-mail-20261022"></script>
     <script src="js/catalog.js?v=products-20261027"></script>
     <script src="js/main.js?v=product-dashes-20261027"></script>
+    <script src="js/store-header.js?v=shared-nav"></script>
   </body>
 </html>

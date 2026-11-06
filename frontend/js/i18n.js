@@ -94,6 +94,13 @@ SẠCH – CHUẨN – THIÊN NHIÊN|PURE – AUTHENTIC – NATURAL
 Trình duyệt của bạn không hỗ trợ thẻ video.|Your browser does not support video playback.
 Trình duyệt của bạn không hỗ trợ video.|Your browser does not support video playback.
 Kiến thức về trầm|Understanding agarwood
+Đôi nét về trầm hương|A brief introduction to agarwood
+Từ cây Dó bầu đến hương thơm|From the Aquilaria tree to its fragrance
+Trầm hương là phần gỗ tích nhựa thơm của cây Dó bầu. Theo thời gian, nhựa có thể tích tụ trong gỗ quanh vùng cây bị tổn thương, tạo nên phần gỗ có mùi hương đặc trưng.|Agarwood is the fragrant, resin-rich wood of the Aquilaria tree. Over time, resin can build up in the wood around an injury, giving it a distinctive scent.
+Hương thơm của gỗ trầm|The scent of agarwood
+Khi được làm ấm hoặc đốt, gỗ trầm tỏa hương. Mùi hương có thể khác nhau giữa các mẫu gỗ, từ nhẹ và dịu đến đậm và ấm.|Agarwood releases its fragrance when warmed or burned. The scent can vary from piece to piece, from light and gentle to rich and warm.
+Trầm trong đời sống|Agarwood in everyday life
+Trầm hương thường được dùng để tạo hương cho không gian hoặc trong các dịp thờ cúng. Gỗ trầm cũng được chế tác thành đồ thủ công.|Agarwood is often used to scent spaces or in worship. It is also crafted into handmade objects.
 Bốn dòng sản phẩm, những nét riêng của gỗ trầm|Four collections, each with its own character
 Khám phá Bì Kỳ Nam, Trầm Hương, Trầm loại 4 và Trầm loại 5 tại vườn trầm Khánh Hòa. Trong nhóm Trầm Hương, tìm hiểu thêm hai dòng Trầm Rục và Trầm Tốc.|Explore Bi Ky Nam, Agarwood, Grade 4 and Grade 5 at our Khanh Hoa garden. Within the Agarwood collection, discover the Ruc and Toc varieties.
 01 · Bì Kỳ Nam|01 · Bi Ky Nam
