@@ -5,12 +5,14 @@
     "id": "nhang-tram-huong-nu-pho-thong",
     "filterGroup": "nu-tram-huong",
     "name": "Nhang Trầm Hương Nụ Phổ Thông",
-    "image": "assets/images/tramhuong-tach-nen.png",
+    "image": "assets/images/tram-nu-pho-thong.jpg",
     "images": [
-      
+      "assets/images/tram-nu-pho-thong.jpg",
+      "assets/images/tram-nu-pho-thong-2.jpg",
+      "assets/images/tram-nu-pho-thong-3.jpg",
     ],
-    "description": "Trầm hương là phần gỗ chứa nhiều chất nhựa thơm được sinh ra từ thân cây Dó bầu (Aquilaria) khi cây bị thương tổn do tác động của tự nhiên hoặc con người. Để tự bảo vệ, cây tiết ra một loại kháng thể đặc biệt, qua hàng chục, hàng trăm năm tích tụ và biến tính tạo thành khối trầm hương quý hiếm có mùi thơm đặc trưng đặc biệt sâu lắng.",
-    "feature": "Gỗ Dó bầu tích tụ nhựa thơm, mang hương thơm đặc trưng, sâu lắng.",
+    "description": "Nhang trầm dạng nụ. Liên hệ cửa hàng để biết thêm thông tin.",
+    "feature": "Dạng nụ",
     "category": "Thông Tin Chi Tiết",
     "priceVnd": 275000
   },
@@ -18,13 +20,14 @@
     "id": "nhang-tram-huong-nu-cao-cap",
     "filterGroup": "nu-tram-huong",
     "name": "Nhang Trầm Hương Nụ Cao Cấp",
-    "image": "assets/images/tram_loai4-tach-nen.png",
+    "image": "assets/images/tram-nu-cao-cap.jpg",
     "images": [
-      "assets/images/tram_loai4-tach-nen.png",
-      "assets/images/tram_loai4(1)-tach-nen.png"
+      "assets/images/tram-nu-cao-cap.jpg",
+      "assets/images/tram-nu-cao-cap-2.jpg",
+      "assets/images/tram-nu-cao-cap-3.jpg",
     ],
-    "description": "Trầm loại 4 là phân cấp trầm hương có lượng tinh dầu thấm vào thớ gỗ không nhiều, mùi thơm nhẹ hoặc ít đậm, gỗ thường sáng màu hơn và không chìm nước.",
-    "feature": "Lượng tinh dầu không nhiều, hương nhẹ hoặc ít đậm, gỗ thường sáng màu và không chìm nước.",
+    "description": "Nhang trầm dạng nụ. Liên hệ cửa hàng để biết thêm thông tin.",
+    "feature": "Dạng nụ",
     "category": "Thông Tin Chi Tiết",
     "priceVnd": 600000
   },
@@ -32,16 +35,16 @@
     "id": "nhang-tram-huong-nu-thuong-hang",
     "filterGroup": "nu-tram-huong",
     "name": "Nhang Trầm Hương Nụ Thượng Hạng",
-    "image": "assets/images/tram_loai5-tach-nen.png",
+    "image": "assets/images/tram-nu-thuong-hang.jpg",
     "images": [
-      "assets/images/tram_loai5-tach-nen.png",
-      "assets/images/tram_loai5(1)-tach-nen.png",
-      "assets/images/tram_loai5(2)-tach-nen.png"
+      "assets/images/tram-nu-thuong-hang.jpg",
+      "assets/images/tram-nu-thuong-hang-2.jpg",
+      "assets/images/tram-nu-thuong-hang-3.jpg",
     ],
-    "description": "Trầm loại 5 là phân cấp trầm hương có lượng tinh dầu thấm vào thớ gỗ rất ít và mùi thơm nhẹ, gỗ thường sáng màu hơn Trầm loại 4 và không chìm nước.",
-    "feature": "Lượng tinh dầu rất ít, hương nhẹ, gỗ thường sáng màu hơn Trầm loại 4 và không chìm nước.",
+    "description": "Nhang trầm dạng nụ. Liên hệ cửa hàng để biết thêm thông tin.",
+    "feature": "Dạng nụ",
     "category": "Thông Tin Chi Tiết",
-    "priceVnd": 500000
+    "priceVnd": 1100000
   },
   {
     "id": "lu-dot-tram-huong-bang-dong",

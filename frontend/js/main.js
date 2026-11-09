@@ -13,21 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })[character]);
   const assetUrl = (path) =>
     new URL(String(path || "").replace(/^(?:\.\.\/)+/, ""), siteRoot).href;
-  // Static HTML remains a no-JavaScript fallback; catalog data drives live cards.
-  document.querySelectorAll('.product-card[data-product-id]').forEach(card => {
-    const product = featuredProducts[card.dataset.productId];
-    if (!product) return;
-    const title = card.querySelector('.product-card__title');
-    const image = card.querySelector('img');
-    if (title) title.textContent = product.name;
-    if (image && product.image) { image.src = assetUrl(product.image); image.alt = product.name; }
-    const price = card.querySelector('.product-card__price');
-    if (price && Number.isFinite(product.priceVnd)) price.textContent = new Intl.NumberFormat('vi-VN').format(product.priceVnd) + ' ₫';
-    card.querySelectorAll('a[href]').forEach(link => {
-      const url = new URL(link.href, location.href);
-      if (url.searchParams.has('product')) { url.searchParams.set('product', product.id); link.href = url.href; }
-    });
-  });
   const contactProducts = document.querySelector('#contactForm #product');
   if (contactProducts) {
     const placeholder = contactProducts.querySelector('option[value=""]');
@@ -233,25 +218,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const sliderWrap = document.querySelector(".product-slider");
-  if (sliderWrap) {
-    const productGrid = sliderWrap.querySelector(".product-grid");
-    const prevBtn = sliderWrap.querySelector("[data-slider='prev']");
-    const nextBtn = sliderWrap.querySelector("[data-slider='next']");
-
-    if (productGrid && prevBtn && nextBtn) {
-      const scrollAmount = productGrid.querySelector(".product-card")?.offsetWidth + 18 || 260;
-
-      prevBtn.addEventListener("click", () => {
-        productGrid.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-      });
-
-      nextBtn.addEventListener("click", () => {
-        productGrid.scrollBy({ left: scrollAmount, behavior: "smooth" });
-      });
-    }
-  }
-
   const lightbox = document.querySelector(".lightbox");
   const lightboxContent = document.querySelector(".lightbox__content");
   const closeBtn = document.querySelector(".lightbox__close");
@@ -326,7 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Keep separators horizontal while retaining the serif product typography.
-  document.querySelectorAll('.category-card__content h3, .product-card__title, [data-product-title]').forEach(heading => {
+  document.querySelectorAll('.product-card__title, [data-product-title]').forEach(heading => {
     const walker = document.createTreeWalker(heading, NodeFilter.SHOW_TEXT);
     const nodes = [];
     while (walker.nextNode()) nodes.push(walker.currentNode);

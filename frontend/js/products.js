@@ -64,7 +64,7 @@
       });
       placeholder.hidden = true;
       media.append(image);
-      image.src = '../' + product.image + '?v=1254';
+      image.src = '../' + product.image + '?v=incense-cones';
     }
     media.append(placeholder, element('span', categories[groupOf(product)] || 'Trầm hương', 'catalog-card__badge'));
     const body = element('div', '', 'catalog-card__body');

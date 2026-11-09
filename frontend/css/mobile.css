@@ -8,10 +8,6 @@
     gap: 0.8rem;
   }
 
-  .product-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
 .about-brand__layout,
   .about-story,
   .commitment__inner,
@@ -80,18 +76,10 @@
 
   .about-brand__layout,
   .process-gallery,
-  .product-grid,
-  .products-highlight .product-grid,
   .container.footer__grid,
-  .category-grid,
   .trust-grid,
   .stat-strip {
     grid-template-columns: 1fr;
-  }
-
-  .product-card__footer {
-    flex-direction: column;
-    align-items: center;
   }
 
   .floating-contact {
