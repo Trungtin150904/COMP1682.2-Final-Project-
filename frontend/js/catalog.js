@@ -91,49 +91,52 @@
     "priceVnd": 5000000
   },
   {
-    "id": "chuoi-tram-may-man",
-    "name": "Chuỗi Trầm Hương May Mắn (04mm - 108 hạt)",
-    "priceVnd": 990000,
+    "id": "chuoi-tram-huong-8mm-108-hat-trung-cap",
+    "name": "Chuỗi trầm hương 8mm 108 hạt trung cấp",
+    "priceVnd": 6000000,
     "filterGroup": "vong-chuoi",
     "categoryId": "tram-huong",
-    "image": "assets/images/chuoitramhuong108.jpg",
-    "images": [],
+    "image": "assets/images/chuoi-tram-huong-8mm-108-hat-trung-cap.jpg",
+    "images": [
+      "assets/images/chuoi-tram-huong-8mm-108-hat-trung-cap.jpg",
+      "assets/images/chuoi-tram-huong-8mm-108-hat-trung-cap-2.jpg",
+      "assets/images/chuoi-tram-huong-8mm-108-hat-trung-cap-3.jpg",
+      "assets/images/chuoi-tram-huong-8mm-108-hat-trung-cap-4.jpg",
+    ],
     "description": "Thông tin sản phẩm đang được cập nhật. Vui lòng liên hệ để biết thêm chi tiết.",
     "feature": "Thông tin đang cập nhật.",
     "category": "Thông Tin Chi Tiết"
   },
   {
-    "id": "vong-tram-may-man",
-    "name": "Vòng Trầm Hương May Mắn (10mm - 18 hạt)",
-    "priceVnd": 990000,
+    "id": "chuoi-tram-huong-8mm-108-hat-cao-cap",
+    "name": "Chuỗi trầm hương 8mm 108 hạt cao cấp",
+    "priceVnd": 20000000,
     "filterGroup": "vong-chuoi",
     "categoryId": "tram-huong",
-    "image": "assets/images/vong_tram_huong_mm.jpg",
-    "images": [],
+    "image": "assets/images/chuoi-tram-huong-8mm-108-hat-cao-cap.jpg",
+    "images": [
+      "assets/images/chuoi-tram-huong-8mm-108-hat-cao-cap.jpg",
+      "assets/images/chuoi-tram-huong-8mm-108-hat-cao-cap-2.jpg",
+      "assets/images/chuoi-tram-huong-8mm-108-hat-cao-cap-3.jpg",
+      "assets/images/chuoi-tram-huong-8mm-108-hat-cao-cap-4.jpg"
+    ],
     "description": "Thông tin sản phẩm đang được cập nhật. Vui lòng liên hệ để biết thêm chi tiết.",
     "feature": "Thông tin đang cập nhật.",
     "category": "Thông Tin Chi Tiết"
   },
   {
-    "id": "atc-tram-may-man",
-    "name": "ATC - Trầm Hương May Mắn (12mm - 16 hạt)",
-    "priceVnd": 990000,
+    "id": "vong-tay-tram-huong-10mm-hat-tron-pho-thong",
+    "name": "Vòng tay trầm hương 10mm hạt tròn phổ thông",
+    "priceVnd": 2490000,
     "filterGroup": "vong-chuoi",
     "categoryId": "tram-huong",
-    "image": "",
-    "images": [],
-    "description": "Thông tin sản phẩm đang được cập nhật. Vui lòng liên hệ để biết thêm chi tiết.",
-    "feature": "Thông tin đang cập nhật.",
-    "category": "Thông Tin Chi Tiết"
-  },
-  {
-    "id": "vong-tram-thinh-vuong",
-    "name": "Vòng Trầm Thịnh Vượng",
-    "priceVnd": 1290000,
-    "filterGroup": "vong-chuoi",
-    "categoryId": "tram-huong",
-    "image": "",
-    "images": [],
+    "image": "assets/images/vong-tay-tram-huong-10mm-hat-tron-pho-thong.jpg",
+    "images": [
+      "assets/images/vong-tay-tram-huong-10mm-hat-tron-pho-thong.jpg",
+      "assets/images/vong-tay-tram-huong-10mm-hat-tron-pho-thong-2.jpg",
+      "assets/images/vong-tay-tram-huong-10mm-hat-tron-pho-thong-3.jpg",
+      "assets/images/vong-tay-tram-huong-10mm-hat-tron-pho-thong-4.jpg"
+    ],
     "description": "Thông tin sản phẩm đang được cập nhật. Vui lòng liên hệ để biết thêm chi tiết.",
     "feature": "Thông tin đang cập nhật.",
     "category": "Thông Tin Chi Tiết"
@@ -230,7 +233,10 @@
     "categoryId": "tram-huong",
     "image": "assets/images/vong-tay-tram-huong-8mm-hat-tron-trung-cap.png",
     "images": [
-      "assets/images/vong-tay-tram-huong-8mm-hat-tron-trung-cap.png"
+      "assets/images/vong-tay-tram-huong-8mm-hat-tron-trung-cap.png",
+      "assets/images/vong-tay-tram-huong-8mm-hat-tron-trung-cap-2.jpg",
+      "assets/images/vong-tay-tram-huong-8mm-hat-tron-trung-cap-3.jpg",
+      "assets/images/vong-tay-tram-huong-8mm-hat-tron-trung-cap-4.jpg",
     ],
     "description": "Liên hệ cửa hàng để biết thêm thông tin về sản phẩm.",
     "feature": "8mm Hạt Tròn Trung Cấp",
@@ -244,7 +250,10 @@
     "categoryId": "tram-huong",
     "image": "assets/images/vong-tay-tram-huong-8mm-hat-tron-cao-cap.jpg",
     "images": [
-      "assets/images/vong-tay-tram-huong-8mm-hat-tron-cao-cap.jpg"
+      "assets/images/vong-tay-tram-huong-8mm-hat-tron-cao-cap.jpg", 
+      "assets/images/vong-tay-tram-huong-8mm-hat-tron-cao-cap-2.jpg", 
+      "assets/images/vong-tay-tram-huong-8mm-hat-tron-cao-cap-3.jpg", 
+      "assets/images/vong-tay-tram-huong-8mm-hat-tron-cao-cap-4.jpg"
     ],
     "description": "Liên hệ cửa hàng để biết thêm thông tin về sản phẩm.",
     "feature": "8mm Hạt Tròn Cao Cấp",
@@ -258,7 +267,10 @@
     "categoryId": "tram-huong",
     "image": "assets/images/chuoi-tram-huong-6mm-108-hat-pho-thong.jpg",
     "images": [
-      "assets/images/chuoi-tram-huong-6mm-108-hat-pho-thong.jpg"
+      "assets/images/chuoi-tram-huong-6mm-108-hat-pho-thong.jpg",
+      "assets/images/chuoi-tram-huong-6mm-108-hat-pho-thong-2.jpg",
+      "assets/images/chuoi-tram-huong-6mm-108-hat-pho-thong-3.jpg",
+      "assets/images/chuoi-tram-huong-6mm-108-hat-pho-thong-4.jpg",
     ],
     "description": "Liên hệ cửa hàng để biết thêm thông tin về sản phẩm.",
     "feature": "6mm 108 Hạt Phổ Thông",
@@ -272,7 +284,10 @@
     "categoryId": "tram-huong",
     "image": "assets/images/chuoi-tram-huong-6mm-108-hat-trung-cap.jpg",
     "images": [
-      "assets/images/chuoi-tram-huong-6mm-108-hat-trung-cap.jpg"
+      "assets/images/chuoi-tram-huong-6mm-108-hat-trung-cap.jpg",
+      "assets/images/chuoi-tram-huong-6mm-108-hat-trung-cap-2.jpg",
+      "assets/images/chuoi-tram-huong-6mm-108-hat-trung-cap-3.jpg",
+      "assets/images/chuoi-tram-huong-6mm-108-hat-trung-cap-4.jpg",
     ],
     "description": "Liên hệ cửa hàng để biết thêm thông tin về sản phẩm.",
     "feature": "6mm 108 Hạt Trung Cấp",
