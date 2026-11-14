@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "'": "&#39;",
     })[character]);
   const assetUrl = (path) =>
-    new URL(String(path || "").replace(/^(?:\.\.\/)+/, ""), siteRoot).href;
+    new URL(path + "?v=product-photos-20261114", siteRoot).href;
   const contactProducts = document.querySelector('#contactForm #product');
   if (contactProducts) {
     const placeholder = contactProducts.querySelector('option[value=""]');

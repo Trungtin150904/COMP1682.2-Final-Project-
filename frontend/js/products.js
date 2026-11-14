@@ -13,12 +13,12 @@
     'vong-chuoi': 'Vòng Và Chuỗi',
     'nu-tram-huong': 'Nụ Trầm Hương',
     'nhang-tram': 'Nhang Trầm',
-    'thanh-tram': 'Thanh Trầm',
+    'thac-khoi': 'Thác Khói',
     'dung-cu-dot-tram': 'Dụng Cụ Đốt Trầm'
   };
   const purposes = {
     wear: ['vong-chuoi'],
-    burn: ['nhang-tram', 'thanh-tram']
+    burn: ['nhang-tram', 'nu-tram-huong', 'thac-khoi', 'dung-cu-dot-tram']
   };
   const featured = [
     'vong-tay-tram-huong-8mm-hat-tron-trung-cap',
@@ -28,7 +28,7 @@
   let query = '';
 
   function groupOf(product) {
-    return product.id.startsWith('nhang-tram-huong-co-tam-') ? 'nhang-tram' : product.filterGroup || product.id;
+    return product.filterGroup;
   }
 
   function element(tag, text, className) {
@@ -64,7 +64,7 @@
       });
       placeholder.hidden = true;
       media.append(image);
-      image.src = '../' + product.image + '?v=incense-cones';
+      image.src = '../' + product.image + '?v=product-photos-20261114';
     }
     media.append(placeholder, element('span', categories[groupOf(product)] || 'Trầm hương', 'catalog-card__badge'));
     const body = element('div', '', 'catalog-card__body');
