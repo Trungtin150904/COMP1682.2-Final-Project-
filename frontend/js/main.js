@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const requestedProductId =
       new URLSearchParams(window.location.search).get("product") ||
       productDetailInfo.dataset.productId;
-    const product = featuredProducts[requestedProductId];
+    const product = Object.hasOwn(featuredProducts, requestedProductId) ? featuredProducts[requestedProductId] : null;
     if (product) {
       productDetailInfo.dataset.productId = requestedProductId;
       document.querySelector("[data-product-category]").textContent = product.category;
@@ -36,6 +36,31 @@ document.addEventListener("DOMContentLoaded", () => {
       document.title = `${product.name} | Nha Trầm`;
       productDetailInfo.querySelector("[data-product-title]").textContent = product.name;
       productDetailInfo.querySelector("[data-product-description]").textContent = product.description;
+      document.querySelector('[data-detail-description]').textContent = product.description;
+      document.querySelector('[data-product-help]').hidden = false;
+      const actions = productDetailInfo.querySelector('.product-detail__actions');
+      actions.hidden = false;
+      actions.querySelectorAll('[data-cart-add]').forEach(button => { button.dataset.cartAdd = product.id; });
+      const quantityField = actions.querySelector('#detailQuantity');
+      actions.querySelectorAll('[data-step]').forEach(button => {
+        button.addEventListener('click', () => {
+          const quantity = Number.isFinite(quantityField.valueAsNumber) ? Math.trunc(quantityField.valueAsNumber) : 1;
+          quantityField.value = Math.min(99, Math.max(1, quantity + Number(button.dataset.step)));
+        });
+      });
+
+      const related = catalog.products.filter(item => item.id !== product.id);
+      related.sort((a, b) => Number(b.filterGroup === product.filterGroup) - Number(a.filterGroup === product.filterGroup));
+      document.querySelector('[data-related-products]').innerHTML = related.slice(0, 4).map(item => {
+        const picture = item.image
+          ? '<img loading="lazy" alt="' + escapeHtml(item.name) + '" src="' + escapeHtml(assetUrl(item.image)) + '">'
+          : '<div class="detail-related__placeholder">Chưa thêm ảnh sản phẩm</div>';
+        return '<article>' + picture + '<div><h3>' + escapeHtml(item.name) + '</h3><strong>' +
+          new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(item.priceVnd) +
+          '</strong><a class="btn btn--outline" href="product-detail.html?product=' +
+          encodeURIComponent(item.id) + '">Xem chi tiết</a></div></article>';
+      }).join('');
+
       const mainImage = document.querySelector("[data-product-main-image]");
       const thumbnails = document.querySelector("[data-product-thumbnails]");
       const productImages = [...new Set([product.image, ...(product.images || [])].filter(Boolean))];
@@ -86,6 +111,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
       selectImage(0);
+      const imageDialog = document.querySelector('.detail-image-dialog');
+      document.querySelector('[data-gallery-zoom]').addEventListener('click', () => {
+        const zoomImage = imageDialog.querySelector('img');
+        zoomImage.src = mainImage.src;
+        zoomImage.alt = mainImage.alt;
+        imageDialog.showModal();
+      });
       } else {
         const gallery = document.querySelector('.product-detail__gallery');
         const placeholder = document.createElement('p');
@@ -95,10 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       const detailPrice = document.querySelector('[data-product-price]');
       if (detailPrice && Number.isFinite(product.priceVnd)) detailPrice.textContent = new Intl.NumberFormat('vi-VN').format(product.priceVnd) + ' ₫';
-      const contactHref = `contact.html?product=${encodeURIComponent(product.categoryId || requestedProductId)}`;
-      productDetailInfo.querySelector("[data-product-contact]").href = contactHref;
-
-      const specs = productDetailInfo.querySelector("[data-product-specs]");
+      const specs = document.querySelector("[data-product-specs]");
       specs.replaceChildren(
         ...[
           ["Sản phẩm", product.name],

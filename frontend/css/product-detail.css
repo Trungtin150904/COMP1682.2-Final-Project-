@@ -1,0 +1,50 @@
+.product-page { background: #fcf6f2; }
+.product-page .product-detail.section { padding-top: 1.25rem; }
+.product-page .product-detail__grid { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: clamp(1.5rem,4vw,3rem); }
+.product-page .product-detail__info { padding: 0; }
+.product-page .product-detail__info h1 { font-size: clamp(2rem,3.2vw,3.4rem); line-height: 1.08; margin: .75rem 0 1rem; }
+.product-page .product-detail__image-frame { border-color: #e5d3c7; background: #f1e5db; }
+.product-page .product-detail__main-image { height: auto; aspect-ratio: 1; padding: 0; background: transparent; }
+.product-page .product-card__price { background: #fff0e5; padding: .75rem 1rem; border: 1px solid #e5d3c7; border-radius: .55rem; font-size: 1.65rem; }
+.product-page [data-product-description] { padding: 1rem; background: #fff; border: 1px solid #e5d3c7; border-radius: .55rem; }
+.detail-zoom { position: absolute; right: .75rem; top: .75rem; padding: .35rem .65rem; background: white; border: 1px solid #e5d3c7; border-radius: .4rem; cursor: zoom-in; }
+.product-page .product-detail__actions:not([hidden]) { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; }
+.detail-quantity { flex-basis: 100%; display: flex; align-items: center; gap: .5rem; margin-bottom: .3rem; }
+.detail-quantity__control { display: inline-flex; align-items: stretch; border: 1px solid #e5d3c7; border-radius: .4rem; background: white; }
+.detail-quantity__control button, .detail-quantity__control input { min-height: 44px; width: 44px; padding: 0; border: 0; background: transparent; color: inherit; text-align: center; font: inherit; }
+.detail-quantity__control button { cursor: pointer; }
+.detail-quantity__control button:first-child { border-radius: .35rem 0 0 .35rem; }
+.detail-quantity__control button:last-child { border-radius: 0 .35rem .35rem 0; }
+@media (hover: hover) {
+  .detail-quantity__control button:hover { background: #fff0e5; }
+}
+.detail-quantity__control input { appearance: textfield; -moz-appearance: textfield; }
+.detail-quantity__control input::-webkit-inner-spin-button,
+.detail-quantity__control input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+.detail-facts, .detail-related { margin-bottom: clamp(2rem,5vw,4rem); }
+.detail-facts { padding: clamp(1rem,3vw,2rem); border: 1px solid #e5d3c7; border-radius: .75rem; background: white; }
+.detail-facts__nav, .detail-related__heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: .75rem 1.5rem; }
+.detail-facts__nav { padding-bottom: .75rem; border-bottom: 1px solid #e5d3c7; font-weight: 600; }
+.detail-facts__nav a { text-decoration: underline; text-underline-offset: .2em; }
+.detail-facts__grid { display: grid; grid-template-columns: minmax(0,1.65fr) minmax(0,1fr); gap: 1.5rem; margin-top: 1rem; }
+.detail-facts__grid [id] { scroll-margin-top: 10rem; }
+#detailSpecs { background: #fff0e5; padding: 1rem; border-radius: .55rem; }
+#detailSpecs .spec-list { margin: 0; }
+.detail-related__heading { justify-content: space-between; }
+.detail-related__grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1rem; }
+.detail-related article { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid #e5d3c7; border-radius: .65rem; background: white; }
+.detail-related img, .detail-related__placeholder { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.detail-related__placeholder { display: grid; place-items: center; background: #f1e5db; }
+.detail-related article > div:last-child { display: flex; flex-direction: column; flex: 1; gap: .5rem; padding: .9rem; }
+.detail-related h3 { margin: 0; font-size: 1.35rem; }
+.detail-related article a { margin-top: auto; align-self: center; padding: .55rem .85rem; font-size: .8rem; text-align: center; }
+.detail-image-dialog { margin: auto; max-width: min(92vw, 900px); max-height: 92vh; padding: .5rem; border: 0; border-radius: .6rem; }
+.detail-image-dialog::backdrop { background: #21160fbb; }
+.detail-image-dialog form { text-align: right; }
+.detail-image-dialog button { cursor: pointer; border: 0; background: white; font-size: 1.6rem; min-width: 44px; }
+.detail-image-dialog img { max-height: 80vh; width: auto; margin: auto; object-fit: contain; }
+@media (max-width: 767px) {
+  .product-page .product-detail__grid, .detail-facts__grid { grid-template-columns: minmax(0,1fr); }
+  .detail-related__grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .detail-related article a { padding-inline: .5rem; }
+}
