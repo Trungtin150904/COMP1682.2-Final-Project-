@@ -7,7 +7,7 @@
 }
 .catalog-toolbar, .catalog-sidebar { padding: clamp(.85rem, 2vw, 1.4rem); }
 .catalog-toolbar { margin-bottom: 1.5rem; }
-.catalog-search, .catalog-quick, .catalog-summary, .catalog-active, #catalogChips {
+.catalog-search, .catalog-summary, .catalog-active, #catalogChips {
   display: flex;
   align-items: center;
   gap: .55rem;
@@ -23,9 +23,8 @@
 .catalog-search:focus-within { outline: 2px solid #936026; }
 .catalog-search input:focus { outline: none; }
 .catalog-search .product-card__cta { border-radius: .45rem; padding: .55rem .7rem; white-space: nowrap; }
-.catalog-quick, .catalog-active, #catalogChips { flex-wrap: wrap; }
-.catalog-quick { margin-top: .65rem; font-size: .78rem; }
-.catalog-quick button, #catalogChips button {
+.catalog-active, #catalogChips { flex-wrap: wrap; }
+#catalogChips button {
   padding: .26rem .65rem;
   border: 1px solid #e7d7cb;
   border-radius: 999px;

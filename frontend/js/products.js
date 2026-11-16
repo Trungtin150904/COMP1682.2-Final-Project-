@@ -112,12 +112,6 @@
     query = search.elements.query.value.trim();
     render();
   });
-  document.querySelectorAll('[data-query]').forEach(button => {
-    button.addEventListener('click', () => {
-      search.elements.query.value = query = button.dataset.query;
-      render();
-    });
-  });
   function clearCategoryLink() {
     const url = new URL(window.location.href);
     if (!url.searchParams.has('category')) return;

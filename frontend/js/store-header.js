@@ -106,7 +106,8 @@
       const term = document.createElement('dt');
       const definition = document.createElement('dd');
       term.textContent = label;
-      definition.textContent = value;
+      definition.translate = false;
+      definition.textContent = label === 'Phương thức thanh toán' ? (window.siteI18n?.t(value) ?? value) : value;
       return [term, definition];
     }));
     checkoutForm.hidden = true;

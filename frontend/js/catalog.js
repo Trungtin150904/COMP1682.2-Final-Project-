@@ -57,8 +57,8 @@
       "assets/images/lu-dot-tram-bang-dong-3.jpg",
       "assets/images/lu-dot-tram-bang-dong-4.jpg",
     ],
-    "description": "Trầm Rục là loại trầm hương tự nhiên được hình thành từ cây Dó bầu đã chết, ngã đổ và vùi lấp trong đất hoặc bùn ẩm lâu năm. Trải qua quá trình phân hủy tự nhiên, phần gỗ không nhiễm dầu bị mục nát hoàn toàn, chỉ giữ lại phần lõi chứa hàm lượng tinh dầu trầm hương rất cao.",
-    "feature": "Hình thành từ cây Dó bầu chết, ngã đổ lâu năm, phần gỗ không nhiễm dầu phân hủy, để lại phần gỗ tích trầm.",
+    "description": "Dụng cụ dùng để thưởng hương trầm.",
+    "feature": "Lư đốt trầm bằng đồng.",
     "category": "Thông Tin Chi Tiết",
     "priceVnd": 399000
   },
@@ -73,8 +73,8 @@
       "assets/images/dung-cu-dot-tram-bang-dong-3.jpg",
       "assets/images/dung-cu-dot-tram-bang-dong-4.jpg",
     ],
-    "description": "Trầm Tốc là loại trầm phổ biến, có lượng dầu nhiễm nhẹ trong các thớ gỗ và giá thành vừa phải và thường dùng để làm vòng tay, chuỗi hạt hoặc nhang trầm.",
-    "feature": "Lượng dầu nhiễm nhẹ trong thớ gỗ, giá thành vừa phải, thường dùng làm vòng tay, chuỗi hạt hoặc nhang trầm.",
+    "description": "Dụng cụ dùng để thưởng hương trầm.",
+    "feature": "Bộ dụng cụ bằng đồng.",
     "category": "Thông Tin Chi Tiết",
     "priceVnd": 1225000
   },
@@ -89,8 +89,8 @@
       "assets/images/bo-dung-cu-dot-tram-huong-cao-cap-3.jpg",
       "assets/images/bo-dung-cu-dot-tram-huong-cao-cap-4.jpg",
     ],
-    "description": "Bì Kỳ Nam (Kỳ nam) được cửa hàng giới thiệu là sản phẩm gỗ quý hiếm hình thành từ lõi cây Dó bầu (Aquilaria) khi cây bị tổn thương hoặc tác động sinh học. Đây là dạng tích tụ trầm hương ở mức độ cao nhất, sở hữu lượng tinh dầu khổng lồ khiến chất gỗ mềm dẻo như sáp và hoàn toàn chìm nước. Do tỉ lệ xuất hiện trong tự nhiên cực kỳ thấp (chỉ khoảng 1/10.000 đến 1/20.000 cây Dó có trầm mới có Kỳ nam), loại gỗ này được ví như 'biệt dược đắt nhất hành tinh'",
-    "feature": "Gỗ Dó bầu quý hiếm, được giới thiệu có mức tích nhựa cao, chất gỗ mềm dẻo như sáp.",
+    "description": "Dụng cụ dùng để thưởng hương trầm.",
+    "feature": "Bộ dụng cụ đốt trầm cao cấp.",
     "category": "Thông Tin Chi Tiết",
     "priceVnd": 3800000
   },

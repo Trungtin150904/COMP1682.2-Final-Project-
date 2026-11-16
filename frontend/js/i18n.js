@@ -3,6 +3,138 @@
   'use strict';
   const normalize = (value) => value.replace(/\s+/g, ' ').trim();
   const entries = `
+Tư vấn chọn trầm (AI)|AI agarwood guide
+Tư vấn chọn trầm|Agarwood guide
+Tính năng tư vấn AI đang được phát triển. Bạn có thể gửi nhu cầu để được cửa hàng tư vấn.|The AI guide is in development. Tell us what you need and the shop can help you choose.
+Liên hệ tư vấn|Contact us for advice
+Tìm trầm mộc...|Find agarwood...
+Xem sản phẩm|View products
+Sản phẩm nổi bật|Featured products
+Chế tác thủ công từ Ninh Sơn - Khánh Hòa|Handcrafted in Ninh Son, Khanh Hoa
+Xem tất cả danh mục|View all categories
+Xem tất cả sản phẩm →|View all products →
+Vòng Và Chuỗi|Bracelets and bead strands
+Nụ Trầm Hương|Agarwood incense cones
+Nhang Trầm|Agarwood incense sticks
+Thác Khói|Backflow incense burners
+Dụng Cụ Đốt Trầm|Incense accessories
+Giá niêm yết|Listed price
+Chưa có ảnh|Image unavailable
+Chưa thêm ảnh sản phẩm|Product image unavailable
+Video xưởng trầm hương|Agarwood workshop videos
+Thu hoạch trầm hương|Harvesting agarwood
+Chế tác trầm hương|Crafting agarwood
+Sản phẩm trầm hương|Agarwood products
+Bản Final Project local: yêu cầu được lưu trong SQL Server để phục vụ thử nghiệm, không gửi email.|Local Final Project: enquiries are stored in SQL Server for testing. No email is sent.
+Số lượng|Quantity
+Thêm vào giỏ hàng|Add to cart
+Mua ngay|Buy now
+Thông tin & đặc điểm|Information & features
+Thông số quy cách|Specifications
+Bảo quản & tư vấn|Care & guidance
+Thông tin sản phẩm|Product information
+Để sản phẩm ở nơi khô ráo. Liên hệ cửa hàng để được hướng dẫn sử dụng và bảo quản theo từng loại.|Store in a dry place. Contact us for use and care instructions for your product.
+Có thể bạn quan tâm|You may also like
+Đường dẫn|Breadcrumb
+Phóng to ảnh|Enlarge image
+Giảm số lượng|Decrease quantity
+Tăng số lượng|Increase quantity
+Thông tin chi tiết|Detailed information
+Nội dung sản phẩm|Product information sections
+Ảnh sản phẩm phóng to|Enlarged product image
+Đóng ảnh|Close image
+Đặc điểm:|Features:
+Tư vấn:|Advice:
+Danh Mục Trầm Hương Khánh Hòa|Khanh Hoa agarwood catalogue
+108 hạt|108 beads
+Lư đốt trầm|Incense burner
+Sắp xếp theo|Sort by
+Mới nhất|Newest
+Giá thấp đến cao|Price: low to high
+Giá cao đến thấp|Price: high to low
+Bộ lọc đang chọn|Active filters
+Xóa tất cả bộ lọc|Clear all filters
+Đặt lại|Reset
+Dòng trầm và phân loại|Product categories
+Mục đích sử dụng|Intended use
+Đeo hằng ngày|Everyday wear
+Thưởng hương, thờ cúng|Fragrance and worship
+Khoảng giá|Price range
+Từ (₫)|From (₫)
+Đến (₫)|To (₫)
+Giá tối đa phải lớn hơn hoặc bằng giá tối thiểu.|The maximum price must be at least the minimum price.
+Không tìm thấy sản phẩm phù hợp. Hãy thử đổi từ khóa hoặc xóa bộ lọc.|No matching products. Try a different search or clear your filters.
+Hãy bật JavaScript để xem danh sách sản phẩm.|Enable JavaScript to view the product list.
+Khám phá vòng và chuỗi, nụ trầm, nhang trầm, thác khói và dụng cụ đốt trầm.|Explore bracelets, bead strands, incense cones, incense sticks, backflow burners and accessories.
+Tìm sản phẩm|Find a product
+Tìm theo tên, loại trầm hoặc quy cách…|Search by name, category or specification…
+Không giới hạn|No limit
+Đóng|Close
+Giỏ hàng|Cart
+Đóng giỏ hàng|Close cart
+Giỏ hàng của bạn đang trống.|Your cart is empty.
+Sản phẩm trong giỏ|Items in your cart
+Chi tiết thanh toán|Checkout details
+Tạm tính|Subtotal
+Phí giao hàng|Shipping fee
+Chờ xác nhận|Pending confirmation
+Tổng tiền hàng|Total before shipping
+Thông tin giao hàng|Shipping information
+Email (không bắt buộc)|Email (optional)
+Địa chỉ giao hàng|Shipping address
+Số nhà, đường, xã/phường, tỉnh/thành phố|House number, street, ward/commune, province/city
+Ghi chú (không bắt buộc)|Notes (optional)
+Ghi chú|Notes
+Phương thức thanh toán|Payment method
+Thanh toán khi nhận hàng (COD)|Cash on delivery (COD)
+Xem lại thông tin đặt hàng|Review order details
+Đơn hàng và phí giao hàng cần được cửa hàng xác nhận.|The shop needs to confirm the order and shipping fee.
+Kiểm tra thông tin đặt hàng|Review your order details
+Thông tin này chưa được gửi đến cửa hàng.|These details have not been sent to the shop.
+Chỉnh thông tin|Edit details
+Tiếp tục mua sắm|Continue shopping
+Xóa|Remove
+Sản phẩm đã đạt số lượng tối đa trong giỏ hàng.|This item has reached the maximum cart quantity.
+Đã thêm sản phẩm vào giỏ hàng thành công|Item added to your cart
+Dạng nụ|Cone format
+Nhang trầm dạng nụ. Liên hệ cửa hàng để biết thêm thông tin.|Agarwood incense cones. Contact the shop for more information.
+Thông tin đang cập nhật.|Details are being updated.
+Thông tin sản phẩm đang được cập nhật. Vui lòng liên hệ để biết thêm chi tiết.|Product details are being updated. Contact the shop for more information.
+Liên hệ cửa hàng để biết thêm thông tin về sản phẩm.|Contact the shop for more information about this product.
+Nhang Trầm Hương Nụ Phổ Thông|Standard agarwood incense cones
+Nhang Trầm Hương Nụ Cao Cấp|Premium agarwood incense cones
+Nhang Trầm Hương Nụ Thượng Hạng|Special-grade agarwood incense cones
+Lư Đốt Trầm Hương Bằng Đồng|Brass agarwood incense burner
+Bộ Dụng Cụ Đốt Trầm Hương Bằng Đồng|Brass agarwood incense tool set
+Bộ Dụng Cụ Đốt Trầm Hương Cao Cấp|Premium agarwood incense tool set
+Chuỗi trầm hương 8mm 108 hạt trung cấp|Mid-grade 8mm agarwood strand with 108 beads
+Chuỗi trầm hương 8mm 108 hạt cao cấp|Premium 8mm agarwood strand with 108 beads
+Vòng tay trầm hương 10mm hạt tròn phổ thông|Standard 10mm round-bead agarwood bracelet
+Thác Khói Trầm Hương Lá Sen|Lotus-leaf backflow incense burner
+Thác Khói Trầm Hương Phật Di Lặc|Maitreya backflow incense burner
+Thác Khói Trầm Hương Phật Quan Âm|Guanyin backflow incense burner
+Thác Khói Xông Trầm Phong Cảnh|Landscape backflow incense burner
+Thác Khói Trầm Hương Chúa Giê-su|Jesus figurine backflow incense burner
+Vòng Tay Trầm Hương 8mm Hạt Tròn Trung Cấp|Mid-grade 8mm round-bead agarwood bracelet
+Vòng Tay Trầm Hương 8mm Hạt Tròn Cao Cấp|Premium 8mm round-bead agarwood bracelet
+Chuỗi Trầm Hương 6mm 108 Hạt Phổ Thông|Standard 6mm agarwood strand with 108 beads
+Chuỗi Trầm Hương 6mm 108 Hạt Trung Cấp|Mid-grade 6mm agarwood strand with 108 beads
+Nhang Trầm Hương Phổ Thông 30cm Hộp 825 Que|Standard agarwood incense 30cm · 825 sticks
+Nhang Trầm Hương Cao Cấp 30cm Hộp 100 Que|Premium agarwood incense 30cm · 100 sticks
+Nhang Trầm Hương Trung Cấp 20cm Hộp 150 Que|Mid-grade agarwood incense 20cm · 150 sticks
+Nhang Trầm Hương Thượng Hạng 20cm Hộp 100 Que|Special-grade agarwood incense 20cm · 100 sticks
+8mm Hạt Tròn Trung Cấp|8mm mid-grade round beads
+8mm Hạt Tròn Cao Cấp|8mm premium round beads
+6mm 108 Hạt Phổ Thông|6mm standard beads, 108 beads
+6mm 108 Hạt Trung Cấp|6mm mid-grade beads, 108 beads
+30cm Hộp 825 Que|30cm, 825 sticks per box
+30cm Hộp 100 Que|30cm, 100 sticks per box
+20cm Hộp 150 Que|20cm, 150 sticks per box
+20cm Hộp 100 Que|20cm, 100 sticks per box
+Dụng cụ dùng để thưởng hương trầm.|Accessories for enjoying agarwood incense.
+Lư đốt trầm bằng đồng.|Brass incense burner.
+Bộ dụng cụ bằng đồng.|Brass tool set.
+Bộ dụng cụ đốt trầm cao cấp.|Premium incense tool set.
 Trang chủ|Home
 Giới thiệu|About us
 Sản phẩm|Products
@@ -314,6 +446,31 @@ Bản đồ địa chỉ của Nha Trầm|Map to Nha Tram
     if (language !== 'en') return value;
     const source = normalize(value);
     if (dictionary.has(source)) return dictionary.get(source);
+    const productTitle = source.match(/^(.*?) \| Nha Trầm$/);
+    if (productTitle) return translate(productTitle[1]) + ' | Nha Trầm';
+    const dynamic = [
+      [/^Hiển thị (\d+) sản phẩm phù hợp$/, (_, n) => `Showing ${n} matching ${n === '1' ? 'product' : 'products'}`],
+      [/^(\d+) sản phẩm trong giỏ$/, (_, n) => `${n} ${n === '1' ? 'item' : 'items'} in your cart`],
+      [/^Giỏ hàng, (\d+) sản phẩm$/, (_, n) => `Cart, ${n} ${n === '1' ? 'item' : 'items'}`],
+      [/^Thêm (.+) vào giỏ hàng$/, (_, name) => `Add ${translate(name)} to cart`],
+      [/^Xóa (.+) khỏi giỏ hàng$/, (_, name) => `Remove ${translate(name)} from cart`],
+      [/^Đã xóa (.+) khỏi giỏ hàng\.$/, (_, name) => `Removed ${translate(name)} from your cart.`],
+      [/^Đã thêm (.+) vào giỏ hàng\. Giỏ hiện có (\d+) sản phẩm\.$/, (_, name, n) => `Added ${translate(name)} to your cart. Items in cart: ${n}.`],
+      [/^Xem ảnh (\d+) của (.+)$/, (_, n, name) => `View photo ${n} of ${translate(name)}`],
+      [/^(.+) - ảnh (\d+)$/, (_, name, n) => `${translate(name)} - photo ${n}`],
+      [/^Giảm số lượng (.+)$/, (_, name) => `Decrease quantity of ${translate(name)}`],
+      [/^Tăng số lượng (.+)$/, (_, name) => `Increase quantity of ${translate(name)}`],
+      [/^Số lượng (\d+)$/, (_, n) => `Quantity ${n}`],
+      [/^Đơn giá (.+)$/, (_, price) => `Unit price ${price}`],
+      [/^Thành tiền (.+)$/, (_, price) => `Line total ${price}`],
+      [/^Bỏ bộ lọc (.+)$/, (_, label) => `Remove filter: ${translate(label)}`],
+      [/^(.+) ×$/, (_, label) => translate(label) + ' ×'],
+      [/^Từ (\d.+?)(?: · Đến (\d.+))?$/, (_, min, max) => `From ${min}${max ? ' · Up to ' + max : ''}`],
+      [/^Đến (\d.+)$/, (_, max) => `Up to ${max}`]
+    ];
+    for (const [pattern, replacement] of dynamic) {
+      if (pattern.test(source)) return source.replace(pattern, replacement);
+    }
     const names = [['Trầm Hương Cao Cấp', 'Premium agarwood'], ['Trầm Hương', 'Agarwood'], ['Trầm hương', 'Agarwood'], ['Trầm Loại 4', 'Grade 4 agarwood'], ['Trầm loại 4', 'Grade 4 agarwood'], ['Trầm Loại 5', 'Grade 5 agarwood'], ['Trầm loại 5', 'Grade 5 agarwood'], ['Trầm Rục', 'Ruc agarwood'], ['Trầm Tốc', 'Toc agarwood'], ['Bì Kỳ Nam', 'Bi Ky Nam']];
     let result = source;
     if (/^Bạn đang cần tư vấn về:/.test(result)) result = result.replace('Bạn đang cần tư vấn về:', 'You are requesting advice about:');
@@ -328,17 +485,28 @@ Bản đồ địa chỉ của Nha Trầm|Map to Nha Tram
   window.siteI18n = { language, t: translate, dictionary };
   const attributes = ['aria-label', 'alt', 'placeholder', 'title'];
   function translateTree(root) {
-    if (language !== 'en') return;
     if (root.nodeType === Node.TEXT_NODE) {
       if (!root.parentElement || root.parentElement.closest('script, style, .brand, .language-switcher, textarea, [translate="no"]')) return;
       const original = root.nodeValue;
       const converted = translate(original);
-      if (converted !== normalize(original)) root.nodeValue = original.replace(/\S[\s\S]*\S|\S/, converted);
+      const text = converted === normalize(original) ? original : original.replace(/\S[\s\S]*\S|\S/, converted);
+      if (text.includes('-') && root.parentElement.matches('.product-card__title, [data-product-title], .detail-related h3')) {
+        const parts = text.split(/(-)/).map(part => {
+          if (part !== '-') return document.createTextNode(part);
+          const separator = document.createElement('span');
+          separator.className = 'product-name-separator';
+          separator.textContent = part;
+          return separator;
+        });
+        root.replaceWith(...parts);
+      } else if (text !== original) {
+        root.nodeValue = text;
+      }
       return;
     }
     if (root.nodeType !== Node.ELEMENT_NODE && root.nodeType !== Node.DOCUMENT_NODE) return;
     if (root.nodeType === Node.ELEMENT_NODE) {
-      if (root.matches('script, style, .language-switcher, textarea, [translate="no"]')) return;
+      if (root.matches('script, style, .language-switcher, [translate="no"]')) return;
       for (const attribute of attributes) {
         if (root.hasAttribute(attribute)) {
           const before = root.getAttribute(attribute), after = translate(before);

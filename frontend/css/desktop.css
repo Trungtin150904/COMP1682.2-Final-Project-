@@ -1615,7 +1615,8 @@ body { background-color: var(--page-surface); }
 
 /* Cormorant's hyphen is angled; only product separators use the body font. */
 .product-card__title .product-name-separator,
-[data-product-title] .product-name-separator {
+[data-product-title] .product-name-separator,
+.detail-related h3 .product-name-separator {
   display: inline;
   margin: 0;
   padding: 0;
