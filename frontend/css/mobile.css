@@ -77,7 +77,6 @@
   .about-brand__layout,
   .process-gallery,
   .container.footer__grid,
-  .trust-grid,
   .stat-strip {
     grid-template-columns: 1fr;
   }

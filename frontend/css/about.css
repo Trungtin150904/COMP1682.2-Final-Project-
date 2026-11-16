@@ -1,0 +1,51 @@
+.about-page .about-brand { background: var(--color-cream); }
+.about-page .about-brand__layout {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas: "gallery brand";
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+.about-page .about-brand__content { grid-area: brand; padding: 0; }
+.about-page .stat-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .65rem; margin-bottom: 0; }
+.about-page .stat-strip div { padding: clamp(.5rem, 1.5vw, 1rem); }
+.about-page .stat-strip strong { font-size: clamp(1.45rem, 3vw, 2.25rem); }
+.about-page .stat-strip span { font-size: .7rem; overflow-wrap: anywhere; }
+.about-page .process-gallery { grid-area: gallery; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.about-page .process-card { min-height: 0; }
+.about-page .process-card img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.about-page .commitment__inner {
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  grid-template-areas: "intro features" "videos features";
+  grid-template-rows: auto 1fr;
+  align-items: start;
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+.about-page .commitment__content { grid-area: intro; }
+.about-page .commitment__content > p:last-child { margin-bottom: 0; }
+.about-page .commitment-videos {
+  grid-area: videos;
+  align-self: start;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .75rem;
+}
+.about-page .commitment-videos video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  background: #211b17;
+  border-radius: var(--radius-sm);
+}
+.about-page .commitment__inner > .feature-list { grid-area: features; align-self: stretch; grid-template-rows: repeat(2, 1fr); }
+.about-page .commitment .feature-card { display: flex; flex-direction: column; justify-content: center; }
+@media (max-width: 950px) {
+  .about-page .about-brand__layout, .about-page .commitment__inner { grid-template-columns: minmax(0, 1fr); }
+  .about-page .about-brand__layout { grid-template-areas: "brand" "gallery"; }
+  .about-page .commitment__inner { grid-template-areas: "intro" "videos" "features"; grid-template-rows: auto; }
+  .about-page .commitment__inner > .feature-list { grid-template-rows: none; }
+}
+@media (max-width: 600px) {
+  .about-page .commitment-videos { grid-template-columns: minmax(0, 1fr); }
+  .about-page .commitment-videos video { max-height: 60vh; }
+}

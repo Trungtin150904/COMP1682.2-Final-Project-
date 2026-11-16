@@ -17,8 +17,9 @@
     />
     <link rel="stylesheet" href="css/desktop.css?v=product-dashes-20261027" />
     <link rel="stylesheet" href="css/mobile.css?v=product-cutouts-20261021" />
-    <link rel="stylesheet" href="css/home.css?v=featured-only" />
-    <link rel="stylesheet" href="css/store-header.css?v=checkout-preview" />
+    <link rel="stylesheet" href="css/home.css?v=shared-cards" />
+    <link rel="stylesheet" href="css/store-header.css?v=cart-toast" />
+    <link rel="stylesheet" href="css/product-cards.css" />
   </head>
   <body class="home-page">
     <header class="header">
@@ -83,6 +84,48 @@
         </div>
       </section>
 
+      <section class="section home-categories" aria-labelledby="homeCategoriesTitle">
+        <div class="container">
+          <div class="home-categories__heading">
+            <span class="home-categories__label">Phân loại sản phẩm</span>
+            <h2 id="homeCategoriesTitle">Danh mục sản phẩm</h2>
+            <p>Khám phá các dòng trầm hương và dụng cụ thưởng trầm của Trầm Hương Khánh Hòa.</p>
+          </div>
+          <div class="home-categories__grid">
+            <a class="home-category" href="pages/products.html?category=vong-chuoi">
+              <img src="assets/images/chuoi-tram-huong-6mm-108-hat-pho-thong.jpg?v=product-photos-20261114" alt="" loading="lazy" width="400" height="400" />
+              <h3>Vòng và chuỗi</h3>
+              <p>Vòng tay và chuỗi hạt trầm hương với nhiều kiểu dáng và kích thước.</p>
+              <span class="home-category__cta"><span>Xem sản phẩm</span><span aria-hidden="true">→</span></span>
+            </a>
+            <a class="home-category" href="pages/products.html?category=nu-tram-huong">
+              <img src="assets/images/tram-nu-pho-thong.jpg?v=product-photos-20261114" alt="" loading="lazy" width="400" height="400" />
+              <h3>Nụ trầm hương</h3>
+              <p>Nhang dạng nụ với ba dòng Phổ Thông, Cao Cấp và Thượng Hạng.</p>
+              <span class="home-category__cta"><span>Xem sản phẩm</span><span aria-hidden="true">→</span></span>
+            </a>
+            <a class="home-category" href="pages/products.html?category=nhang-tram">
+              <img src="assets/images/nhang-tram-huong-co-tam-pho-thong.jpg?v=product-photos-20261114" alt="" loading="lazy" width="400" height="400" />
+              <h3>Nhang trầm</h3>
+              <p>Nhang trầm có tăm với các quy cách hộp và chiều dài khác nhau.</p>
+              <span class="home-category__cta"><span>Xem sản phẩm</span><span aria-hidden="true">→</span></span>
+            </a>
+            <a class="home-category" href="pages/products.html?category=thac-khoi">
+              <img src="assets/images/thac-khoi-xong-tram-phong-canh.jpg?v=product-photos-20261114" alt="" loading="lazy" width="400" height="400" />
+              <h3>Thác khói</h3>
+              <p>Thác xông trầm với tạo hình lá sen, phong cảnh và tượng.</p>
+              <span class="home-category__cta"><span>Xem sản phẩm</span><span aria-hidden="true">→</span></span>
+            </a>
+            <a class="home-category" href="pages/products.html?category=dung-cu-dot-tram">
+              <img src="assets/images/bo-dung-cu-dot-tram-huong-cao-cap.jpg?v=product-photos-20261114" alt="" loading="lazy" width="400" height="400" />
+              <h3>Dụng cụ đốt trầm</h3>
+              <p>Lư và bộ dụng cụ dùng để đốt và thưởng hương trầm.</p>
+              <span class="home-category__cta"><span>Xem sản phẩm</span><span aria-hidden="true">→</span></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section class="section featured-section" aria-labelledby="featuredTitle">
         <div class="container">
           <div class="featured-heading">
@@ -93,358 +136,7 @@
             </div>
           </div>
 
-          <div class="featured-grid">
-            <article class="featured-card">
-              <div class="featured-card__media">
-                <img
-                src="assets/images/vong-tay-tram-huong-8mm-hat-tron-trung-cap.png"
-                alt="Vòng trầm hương"
-                loading="lazy"
-              />
-                <span class="featured-card__badge">Vòng và chuỗi</span>
-              </div>
-              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
-              <h3>Vòng Tay Trầm Hương 8mm Hạt Tròn Trung Cấp</h3>
-              <div class="featured-card__footer">
-                <div class="featured-card__price">
-                  <small>Giá niêm yết</small>
-                  <strong>1.800.000 ₫</strong>
-                </div>
-                <div class="featured-card__actions">
-                  <a class="product-card__cta" href="pages/product-detail.html?product=vong-tay-tram-huong-8mm-hat-tron-trung-cap">Xem chi tiết</a>
-                  <button type="button" class="featured-add" data-cart-add="vong-tay-tram-huong-8mm-hat-tron-trung-cap" aria-label="Thêm Vòng Tay Trầm Hương 8mm Hạt Tròn Trung Cấp vào giỏ hàng" title="Thêm vào giỏ hàng">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <div class="featured-card__media">
-                <img
-                src="assets/images/vong-tay-tram-huong-8mm-hat-tron-cao-cap.jpg"
-                alt="Vòng tay trầm hương 8mm hạt tròn cao cấp"
-                loading="lazy"
-              />
-                <span class="featured-card__badge">Vòng và chuỗi</span>
-              </div>
-              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
-              <h3>Vòng Tay Trầm Hương 8mm Hạt Tròn Cao Cấp</h3>
-              <div class="featured-card__footer">
-                <div class="featured-card__price">
-                  <small>Giá niêm yết</small>
-                  <strong>3.890.000 ₫</strong>
-                </div>
-                <div class="featured-card__actions">
-                  <a class="product-card__cta" href="pages/product-detail.html?product=vong-tay-tram-huong-8mm-hat-tron-cao-cap">Xem chi tiết</a>
-                  <button type="button" class="featured-add" data-cart-add="vong-tay-tram-huong-8mm-hat-tron-cao-cap" aria-label="Thêm Vòng Tay Trầm Hương 8mm Hạt Tròn Cao Cấp vào giỏ hàng" title="Thêm vào giỏ hàng">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <div class="featured-card__media">
-                <img
-                src="assets/images/chuoi-tram-huong-6mm-108-hat-pho-thong.jpg"
-                alt="Chuỗi trầm hương 6mm 108 hạt phổ thông"
-                loading="lazy"
-              />
-                <span class="featured-card__badge">Vòng và chuỗi</span>
-              </div>
-              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
-              <h3>Chuỗi Trầm Hương 6mm 108 Hạt Phổ Thông</h3>
-              <div class="featured-card__footer">
-                <div class="featured-card__price">
-                  <small>Giá niêm yết</small>
-                  <strong>2.300.000 ₫</strong>
-                </div>
-                <div class="featured-card__actions">
-                  <a class="product-card__cta" href="pages/product-detail.html?product=chuoi-tram-huong-6mm-108-hat-pho-thong">Xem chi tiết</a>
-                  <button type="button" class="featured-add" data-cart-add="chuoi-tram-huong-6mm-108-hat-pho-thong" aria-label="Thêm Chuỗi Trầm Hương 6mm 108 Hạt Phổ Thông vào giỏ hàng" title="Thêm vào giỏ hàng">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <div class="featured-card__media">
-                <img
-                src="assets/images/chuoi-tram-huong-6mm-108-hat-trung-cap.jpg"
-                alt="Chuỗi trầm hương 6mm 108 hạt trung cấp"
-                loading="lazy"
-              />
-                <span class="featured-card__badge">Vòng và chuỗi</span>
-              </div>
-              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
-              <h3>Chuỗi Trầm Hương 6mm 108 Hạt Trung Cấp</h3>
-              <div class="featured-card__footer">
-                <div class="featured-card__price">
-                  <small>Giá niêm yết</small>
-                  <strong>3.900.000 ₫</strong>
-                </div>
-                <div class="featured-card__actions">
-                  <a class="product-card__cta" href="pages/product-detail.html?product=chuoi-tram-huong-6mm-108-hat-trung-cap">Xem chi tiết</a>
-                  <button type="button" class="featured-add" data-cart-add="chuoi-tram-huong-6mm-108-hat-trung-cap" aria-label="Thêm Chuỗi Trầm Hương 6mm 108 Hạt Trung Cấp vào giỏ hàng" title="Thêm vào giỏ hàng">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <div class="featured-card__media">
-                <img
-                src="assets/images/nhang-tram-huong-co-tam-pho-thong.jpg?v=product-photos-20261114"
-                alt="Nhang trầm hương có tăm Phổ Thông"
-                loading="lazy"
-              />
-                <span class="featured-card__badge">Nhang trầm</span>
-              </div>
-              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
-              <h3>Nhang Trầm Hương Phổ Thông 30cm Hộp 825 Que</h3>
-              <div class="featured-card__footer">
-                <div class="featured-card__price">
-                  <small>Giá niêm yết</small>
-                  <strong>480.000 ₫</strong>
-                </div>
-                <div class="featured-card__actions">
-                  <a class="product-card__cta" href="pages/product-detail.html?product=nhang-tram-huong-co-tam-pho-thong">Xem chi tiết</a>
-                  <button type="button" class="featured-add" data-cart-add="nhang-tram-huong-co-tam-pho-thong" aria-label="Thêm Nhang Trầm Hương Phổ Thông 30cm Hộp 825 Que vào giỏ hàng" title="Thêm vào giỏ hàng">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <div class="featured-card__media">
-                <img
-                src="assets/images/nhang-tram-huong-co-tam-cao-cap.jpg"
-                alt="Nhang trầm hương có tăm Cao Cấp"
-                loading="lazy"
-              />
-                <span class="featured-card__badge">Nhang trầm</span>
-              </div>
-              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
-              <h3>Nhang Trầm Hương Cao Cấp 30cm Hộp 100 Que</h3>
-              <div class="featured-card__footer">
-                <div class="featured-card__price">
-                  <small>Giá niêm yết</small>
-                  <strong>150.000 ₫</strong>
-                </div>
-                <div class="featured-card__actions">
-                  <a class="product-card__cta" href="pages/product-detail.html?product=nhang-tram-huong-co-tam-cao-cap">Xem chi tiết</a>
-                  <button type="button" class="featured-add" data-cart-add="nhang-tram-huong-co-tam-cao-cap" aria-label="Thêm Nhang Trầm Hương Cao Cấp 30cm Hộp 100 Que vào giỏ hàng" title="Thêm vào giỏ hàng">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <div class="featured-card__media">
-                <img
-                src="assets/images/nhang-tram-huong-co-tam-trung-cap.jpg"
-                alt="Nhang trầm hương có tăm Trung Cấp"
-                loading="lazy"
-              />
-                <span class="featured-card__badge">Nhang trầm</span>
-              </div>
-              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
-              <h3>Nhang Trầm Hương Trung Cấp 20cm Hộp 150 Que</h3>
-              <div class="featured-card__footer">
-                <div class="featured-card__price">
-                  <small>Giá niêm yết</small>
-                  <strong>105.000 ₫</strong>
-                </div>
-                <div class="featured-card__actions">
-                  <a class="product-card__cta" href="pages/product-detail.html?product=nhang-tram-huong-co-tam-trung-cap">Xem chi tiết</a>
-                  <button type="button" class="featured-add" data-cart-add="nhang-tram-huong-co-tam-trung-cap" aria-label="Thêm Nhang Trầm Hương Trung Cấp 20cm Hộp 150 Que vào giỏ hàng" title="Thêm vào giỏ hàng">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <div class="featured-card__media">
-                <img
-                src="assets/images/nhang-tram-huong-co-tam-thuong-hang.jpg"
-                alt="Nhang trầm hương có tăm Thượng Hạng"
-                loading="lazy"
-              />
-                <span class="featured-card__badge">Nhang trầm</span>
-              </div>
-              <p class="featured-card__brand">TRẦM HƯƠNG KHÁNH HÒA</p>
-              <h3>Nhang Trầm Hương Thượng Hạng 20cm Hộp 100 Que</h3>
-              <div class="featured-card__footer">
-                <div class="featured-card__price">
-                  <small>Giá niêm yết</small>
-                  <strong>250.000 ₫</strong>
-                </div>
-                <div class="featured-card__actions">
-                  <a class="product-card__cta" href="pages/product-detail.html?product=nhang-tram-huong-co-tam-thuong-hang">Xem chi tiết</a>
-                  <button type="button" class="featured-add" data-cart-add="nhang-tram-huong-co-tam-thuong-hang" aria-label="Thêm Nhang Trầm Hương Thượng Hạng 20cm Hộp 100 Que vào giỏ hàng" title="Thêm vào giỏ hàng">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
-                  </button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section about-brand">
-        <div class="container about-brand__layout">
-          <div class="about-brand__content">
-            <span class="eyebrow">Về thương hiệu</span>
-            <h2>Trầm hương từ nguồn gốc tự nhiên, giữ hương lâu và sâu.</h2>
-            <p>
-              Tại vườn trầm Khánh Hòa, chúng tôi ưu tiên trầm nguyên liệu từ
-              rừng tự nhiên, trải qua quy trình thu hoạch, sấy khô, lưu hương và
-              chế tác thủ công để giữ trọn tinh túy của gỗ trầm, mang lại trải
-              nghiệm hương thơm dịu, bình an và sang trọng.
-            </p>
-            <p>
-              Mỗi sản phẩm là sự kết hợp giữa cảm hứng cổ điển, kỹ thuật gia
-              công tỉ mỉ và sự tôn trọng với thiên nhiên, tạo nên những món quà,
-              vật phẩm phong thủy và không gian sống đậm chất thiền.
-            </p>
-            <div class="stat-strip">
-              <div>
-                <strong>100%</strong>
-                <span>Trầm Hương thiên nhiên</span>
-              </div>
-              <div>
-                <strong>30+</strong>
-                <span>Năm kinh nghiệm</span>
-              </div>
-              <div>
-                <strong>10+</strong>
-                <span>Sản phẩm</span>
-              </div>
-            </div>
-            <a href="pages/about.html" class="btn btn--outline">Đọc Thêm</a>
-          </div>
-
-          <div class="process-gallery" aria-label="Quy trình trầm hương">
-            <div class="process-card">
-              <img
-                src="assets/images/thuhoach.jpg"
-                alt="Quy trình thu hoạch trầm hương"
-                loading="lazy"
-              />
-              <span>Thu hoạch</span>
-            </div>
-            <div class="process-card">
-              <img
-                src="assets/images/xuly.jpg"
-                alt="Quy trình xử lý trầm hương"
-                loading="lazy"
-              />
-              <span>Xử lý</span>
-            </div>
-            <div class="process-card">
-              <img
-                src="assets/images/chetac.jpg"
-                alt="Quy trình chế tác trầm hương"
-                loading="lazy"
-              />
-              <span>Chế tác</span>
-            </div>
-            <div class="process-card">
-              <img
-                src="assets/images/thanhpham.jpg"
-                alt="Sản phẩm trầm hương thành phẩm"
-                loading="lazy"
-              />
-              <span>Thành phẩm</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section trust-section">
-        <div class="container">
-          <div class="section-heading section-heading--center">
-            <span class="eyebrow">Vì sao chọn vườn trầm Khánh Hòa</span>
-            <h2>Nguyên liệu rõ nguồn gốc, hương thơm bền, giá trị lâu dài</h2>
-          </div>
-          <div class="trust-grid">
-            <article class="trust-card">
-              <div class="feature-card__icon">✦</div>
-              <h3>Chất lượng được kiểm nghiệm</h3>
-              <p>
-                Mỗi lô trầm đều được chọn lọc kỹ lưỡng để đảm bảo độ nguyên chất
-                và hương thơm ổn định.
-              </p>
-            </article>
-            <article class="trust-card">
-              <div class="feature-card__icon">✧</div>
-              <h3>Đội ngũ chế tác kinh nghiệm</h3>
-              <p>
-                Với quy trình thủ công tỉ mỉ, chúng tôi giữ nguyên hương vị tự
-                nhiên và vẻ đẹp cổ điển của trầm.
-              </p>
-            </article>
-            <article class="trust-card">
-              <div class="feature-card__icon">❈</div>
-              <h3>Cam kết giá trị lâu dài</h3>
-              <p>
-                Phát triển thành thương hiệu đáng tin cậy cho cả người tiêu dùng
-                và đối tác kinh doanh.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section commitment">
-        <div class="container commitment__inner">
-          <div class="commitment__content">
-            <span class="eyebrow">Về chúng tôi</span>
-            <h2>
-              Cam kết chất lượng, linh hồn và sự tôn trọng với thiên nhiên.
-            </h2>
-            <p>
-              Với hơn 30 năm đồng hành cùng những người yêu trầm, vườn trầm
-              Khánh Hòa cam kết mang đến hương trầm thiên nhiên 100%, không hóa
-              chất, không pha tạp, và luôn kiểm định rõ nguồn gốc nguyên liệu
-              trước khi đến tay khách hàng.
-            </p>
-          </div>
-            <div class="commitment-videos" aria-label="Video xưởng trầm hương">
-              <video controls playsinline preload="metadata" aria-label="Thu hoạch trầm hương">
-                <source src="assets/video/thuhoach.mp4" type="video/mp4" />
-              </video>
-              <video controls playsinline preload="metadata" aria-label="Chế tác trầm hương">
-                <source src="assets/video/chetac.mp4" type="video/mp4" />
-              </video>
-              <video controls playsinline preload="metadata" aria-label="Sản phẩm trầm hương">
-                <source src="assets/video/sanpham.mp4" type="video/mp4" />
-              </video>
-            </div>
-
-          <div class="feature-list">
-            <article class="feature-card">
-              <div class="feature-card__icon">✦</div>
-              <h3>Trầm Thiên Nhiên 100%</h3>
-              <p>
-                Nguyên liệu được lựa chọn kỹ lưỡng và kiểm định rõ nguồn gốc.
-              </p>
-            </article>
-            <article class="feature-card">
-              <div class="feature-card__icon">✧</div>
-              <h3>Nghệ Nhân Chế Tác Thủ Công</h3>
-              <p>
-                Mỗi đường cắt và mài sửa đều được thực hiện bằng tay để giữ tông
-                hương nguyên bản.
-              </p>
-            </article>
-          </div>
+          <div class="featured-grid" data-featured-products="vong-tay-tram-huong-8mm-hat-tron-trung-cap vong-tay-tram-huong-8mm-hat-tron-cao-cap chuoi-tram-huong-6mm-108-hat-pho-thong chuoi-tram-huong-6mm-108-hat-trung-cap nhang-tram-huong-co-tam-pho-thong nhang-tram-huong-co-tam-cao-cap nhang-tram-huong-co-tam-trung-cap nhang-tram-huong-co-tam-thuong-hang nhang-tram-huong-nu-pho-thong nhang-tram-huong-nu-cao-cap lu-dot-tram-huong-bang-dong bo-dung-cu-dot-tram-huong-bang-dong thac-khoi-tram-huong-la-sen thac-khoi-tram-huong-phat-di-lac thac-khoi-tram-huong-phat-quan-am thac-khoi-xong-tram-phong-canh"></div>
         </div>
       </section>
 
@@ -501,9 +193,10 @@
       <div class="lightbox__content"></div>
     </div>
 
-    <script src="js/i18n.js?v=contact-mail-20261022"></script>
+    <script src="js/i18n.js?v=home-categories"></script>
     <script src="js/catalog.js?v=product-photos-20261114"></script>
+    <script src="js/product-cards.js"></script>
     <script src="js/main.js?v=product-photos-20261114"></script>
-    <script src="js/store-header.js?v=checkout-preview"></script>
+    <script src="js/store-header.js?v=cart-toast"></script>
   </body>
 </html>

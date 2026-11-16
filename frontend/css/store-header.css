@@ -153,3 +153,18 @@
   .store-cart__items li { grid-template-columns: 4rem minmax(0, 1fr); }
   .store-cart__actions { grid-column: 2; display: flex; flex-wrap: wrap; align-items: center; }
 }
+
+.store-cart-toast {
+  position: fixed;
+  inset: auto 1rem 1rem auto;
+  z-index: 1100;
+  max-width: min(28rem, calc(100% - 2rem));
+  padding: .8rem 1.1rem;
+  border-radius: .6rem;
+  background: #28543b;
+  color: white;
+  box-shadow: 0 .4rem 1rem rgb(0 0 0 / 18%);
+  font-weight: 600;
+  pointer-events: none;
+}
+.store-cart-toast[hidden] { display: none; }

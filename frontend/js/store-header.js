@@ -63,6 +63,7 @@
       <form method="dialog" class="store-cart__continue"><button type="submit" class="btn btn--outline">Tiếp tục mua sắm</button></form>
     </dialog>
     <p class="store-visually-hidden" role="status" data-cart-status></p>
+    <div class="store-cart-toast" data-cart-toast aria-hidden="true" hidden></div>
   `);
   const { byId } = window.siteCatalog;
   const storageKey = 'nha-tram-home-cart';
@@ -75,6 +76,9 @@
   const summary = document.querySelector('[data-cart-summary]');
   const total = document.querySelector('[data-cart-total]');
   const status = document.querySelector('[data-cart-status]');
+  const cartDialog = document.getElementById('storeCart');
+  const toast = document.querySelector('[data-cart-toast]');
+  let toastTimer;
   const subtotalLabel = document.querySelector('[data-cart-subtotal]');
   const itemCountLabel = document.querySelector('[data-cart-item-count]');
 
@@ -248,7 +252,12 @@
       }
       quantityById.set(id, quantity + requested);
       saveCart();
-      if (button.hasAttribute('data-cart-open')) document.getElementById('storeCart').showModal();
+      if (button.hasAttribute('data-cart-open')) cartDialog.showModal();
+      (cartDialog.open ? cartDialog : document.body).append(toast);
+      toast.textContent = 'Đã thêm sản phẩm vào giỏ hàng thành công';
+      toast.hidden = false;
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => { toast.hidden = true; }, 4000);
       status.textContent = `Đã thêm ${byId[id].name} vào giỏ hàng. Giỏ hiện có ${count.textContent} sản phẩm.`;
     });
   });

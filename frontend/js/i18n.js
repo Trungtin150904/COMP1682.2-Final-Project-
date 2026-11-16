@@ -82,8 +82,6 @@ Vườn trầm Khánh Hòa mang đến hương trầm thiên nhiên, tinh túy.|
 Vườn trầm Khánh Hòa mang đến hương trầm thiên nhiên, tinh túy từ rừng và tay nghề thủ công bền bỉ.|Our Khanh Hoa garden brings you natural agarwood, combining the essence of the forest with dedicated craftsmanship.
 Cơ sở Trầm Hương Khánh Hòa, 120 Lê Duẩn, xã Ninh Sơn, tỉnh Khánh Hòa|Tram Huong Khanh Hoa, 120 Le Duan, Ninh Son Commune, Khanh Hoa Province, Vietnam
 Điện thoại: 0975 392 498|Phone: 0975 392 498
-Câu chuyện Nha Trầm|Our story
-Hành trình hơn ba thập kỷ cùng cây Dó bầu|Over three decades with Aquilaria trees
 Từ mầm cây năm 1995|Rooted in 1995
 Gieo trồng bằng sự kiên nhẫn, gìn giữ bằng tâm huyết|Planted with patience, nurtured with dedication
 Năm 1995, chúng tôi bắt đầu gieo trồng 1.200 cây Dó bầu trên vùng đất rộng hơn 7 hecta tại khu vực Đập dâng Tân Mỹ, thị trấn Tân Sơn, huyện Ninh Sơn, tỉnh Ninh Thuận (nay thuộc xã Ninh Sơn, tỉnh Khánh Hòa). Hơn hai thập kỷ kiên nhẫn cùng nắng gió, chăm chút từng mầm cây, khu vườn hôm nay đã bắt đầu cho những thành quả đầu tiên.|In 1995, we planted 1,200 Aquilaria trees on more than seven hectares near the Tan My weir in Tan Son, Ninh Son, Ninh Thuan (now Ninh Son Commune, Khanh Hoa Province). After decades of patient care through sun and wind, the garden is beginning to bear its first rewards.
@@ -148,7 +146,6 @@ Chăm sóc|Nurturing
 Kiên nhẫn đồng hành cùng cây qua nhiều năm nắng gió.|Patiently tending the trees through years of sun and wind.
 Lựa chọn cây trưởng thành và phần gỗ tích trầm để đưa vào chế tác.|Selecting mature trees and resinous wood for crafting.
 Chọn lọc và tạo nên các sản phẩm trầm hương phục vụ nhu cầu thưởng trầm.|Selecting and shaping agarwood products for enjoying their fragrance.
-Hãy trò chuyện với chúng tôi về hương trầm của bạn|Let's talk about your agarwood needs
 Thông tin liên hệ|Contact information
 Người liên hệ:|Contact person:
 Địa chỉ:|Address:
@@ -180,14 +177,25 @@ Hình ảnh giới thiệu giúp bạn tham khảo kiểu dáng. Hãy trao đổ
 Xem các sản phẩm khác|Explore other products
 Các loại trầm hương Khánh Hòa|Our Khanh Hoa agarwood collections
 Phôi Trầm|Agarwood blanks
+Phân loại sản phẩm|Product categories
+Danh mục sản phẩm|Product categories
+Khám phá các dòng trầm hương và dụng cụ thưởng trầm của Trầm Hương Khánh Hòa.|Explore agarwood products and incense accessories from Khanh Hoa.
+Vòng và chuỗi|Bracelets and bead strands
+Vòng tay và chuỗi hạt trầm hương với nhiều kiểu dáng và kích thước.|Agarwood bracelets and bead strands in a range of styles and sizes.
+Nụ trầm hương|Agarwood incense cones
+Nhang dạng nụ với ba dòng Phổ Thông, Cao Cấp và Thượng Hạng.|Incense cones in standard, premium and special grades.
+Nhang trầm|Agarwood incense sticks
+Nhang trầm có tăm với các quy cách hộp và chiều dài khác nhau.|Cored incense sticks in different lengths and pack sizes.
+Thác khói|Backflow incense burners
+Thác xông trầm với tạo hình lá sen, phong cảnh và tượng.|Backflow incense burners in lotus, landscape and figurine designs.
+Dụng cụ đốt trầm|Incense accessories
+Lư và bộ dụng cụ dùng để đốt và thưởng hương trầm.|Burners and tools for enjoying agarwood incense.
 Chọn dòng trầm bạn quan tâm|Choose your agarwood variety
 Tất cả|All products
 Trầm hương tự nhiên Khánh Hòa|Natural agarwood from Khanh Hoa
 Dòng trầm rục tự nhiên|Natural Ruc agarwood
 Dòng trầm tốc tự nhiên|Natural Toc agarwood
 Xem chi tiết|View details
-Thước phim từ vườn trầm|Films from our garden
-Chạm vào hành trình của hương trầm|Discover the journey of agarwood
 01 / Giới thiệu vườn trầm|01 / Introducing the garden
 Câu chuyện mở đầu|Where the story begins
 Mỗi hương trầm bắt đầu từ một hành trình dài|Every fragrance begins with a long journey

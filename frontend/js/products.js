@@ -9,13 +9,7 @@
   const empty = document.getElementById('catalogEmpty');
   const priceError = document.getElementById('catalogPriceError');
   const money = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' });
-  const categories = {
-    'vong-chuoi': 'Vòng Và Chuỗi',
-    'nu-tram-huong': 'Nụ Trầm Hương',
-    'nhang-tram': 'Nhang Trầm',
-    'thac-khoi': 'Thác Khói',
-    'dung-cu-dot-tram': 'Dụng Cụ Đốt Trầm'
-  };
+  const { categories, create } = window.productCards;
   const purposes = {
     wear: ['vong-chuoi'],
     burn: ['nhang-tram', 'nu-tram-huong', 'thac-khoi', 'dung-cu-dot-tram']
@@ -38,6 +32,7 @@
     return node;
   }
 
+  const requestedCategory = new URLSearchParams(window.location.search).get('category');
   const categoryOptions = document.getElementById('catalogCategories');
   for (const [group, name] of Object.entries(categories)) {
     const label = element('label', '');
@@ -45,39 +40,13 @@
     checkbox.type = 'checkbox';
     checkbox.name = 'category';
     checkbox.value = group;
+    checkbox.checked = group === requestedCategory;
     const quantity = catalog.products.filter(product => groupOf(product) === group).length;
     label.append(checkbox, element('span', name), element('small', quantity, 'catalog-category-count'));
     categoryOptions.append(label);
   }
 
-  function cardFor(product) {
-    const article = element('article', '', 'catalog-card');
-    const media = element('div', '', 'catalog-card__media');
-    const placeholder = element('span', 'Chưa có ảnh', 'catalog-card__placeholder');
-    if (product.image) {
-      const image = document.createElement('img');
-      image.alt = product.name;
-      image.loading = 'lazy';
-      image.addEventListener('error', () => {
-        image.remove();
-        placeholder.hidden = false;
-      });
-      placeholder.hidden = true;
-      media.append(image);
-      image.src = '../' + product.image + '?v=product-photos-20261114';
-    }
-    media.append(placeholder, element('span', categories[groupOf(product)] || 'Trầm hương', 'catalog-card__badge'));
-    const body = element('div', '', 'catalog-card__body');
-    const footer = element('div', '', 'catalog-card__footer');
-    const details = element('a', 'Xem chi tiết', 'product-card__cta');
-    details.href = 'product-detail.html?product=' + encodeURIComponent(product.id);
-    footer.append(element('strong', money.format(product.priceVnd)), details);
-    body.append(element('span', 'TRẦM HƯƠNG KHÁNH HÒA', 'catalog-card__brand'), element('h2', product.name, 'product-card__title'), footer);
-    article.append(media, body);
-    return article;
-  }
-
-  const cards = new Map(catalog.products.map(product => [product.id, cardFor(product)]));
+  const cards = new Map(catalog.products.map(product => [product.id, create(product)]));
   function chip(text, remove) {
     const button = element('button', text + ' ×');
     button.type = 'button';
@@ -122,7 +91,10 @@
     if (query) chip(query, () => { query = ''; search.reset(); });
     filters.querySelectorAll('input:checked').forEach(input => {
       const label = input.name === 'category' ? categories[input.value] : input.labels[0].textContent.trim();
-      chip(label, () => { input.checked = false; });
+      chip(label, () => {
+        input.checked = false;
+        if (input.name === 'category') clearCategoryLink();
+      });
     });
     if (Number.isFinite(min) || Number.isFinite(max)) {
       const priceLabel = [Number.isFinite(min) ? 'Từ ' + money.format(min) : '', Number.isFinite(max) ? 'Đến ' + money.format(max) : ''].filter(Boolean).join(' · ');
@@ -146,10 +118,21 @@
       render();
     });
   });
-  filters.addEventListener('input', render);
+  function clearCategoryLink() {
+    const url = new URL(window.location.href);
+    if (!url.searchParams.has('category')) return;
+    url.searchParams.delete('category');
+    history.replaceState(history.state, '', url);
+  }
+
+  filters.addEventListener('input', event => {
+    if (event.target.name === 'category') clearCategoryLink();
+    render();
+  });
   filters.elements.sort.addEventListener('change', render);
   filters.addEventListener('submit', event => event.preventDefault());
   filters.addEventListener('reset', () => {
+    clearCategoryLink();
     query = '';
     search.reset();
     queueMicrotask(render);

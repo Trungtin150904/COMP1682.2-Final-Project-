@@ -14,9 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/desktop.css?v=agarwood-overview" />
+    <link rel="stylesheet" href="../css/desktop.css?v=no-page-banners" />
     <link rel="stylesheet" href="../css/mobile.css?v=layout-audit-20261022" />
-    <link rel="stylesheet" href="../css/store-header.css?v=checkout-preview" />
+    <link rel="stylesheet" href="../css/store-header.css?v=cart-toast" />
+    <link rel="stylesheet" href="../css/about.css?v=commitment-video-left" />
   </head>
   <body class="labels-page about-page">
     <header class="header">
@@ -55,13 +56,7 @@
     </header>
 
     <main>
-      <section class="page-hero page-hero--about">
-        <div class="container">
-          <span class="eyebrow">Câu chuyện Nha Trầm</span>
-          <h1>Hành trình hơn ba thập kỷ cùng cây Dó bầu</h1>
-        </div>
-      </section>
-
+      <h1 class="store-visually-hidden">Giới thiệu</h1>
       <section class="section">
         <div class="container about-story">
           <div class="about-story__content">
@@ -94,6 +89,120 @@
               <source src="../assets/video/gioithieu.mp4" type="video/mp4" />
               Trình duyệt của bạn không hỗ trợ thẻ video.
             </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-brand">
+        <div class="container about-brand__layout">
+          <div class="about-brand__content">
+            <span class="eyebrow">Về thương hiệu</span>
+            <h2>Trầm hương từ nguồn gốc tự nhiên, giữ hương lâu và sâu.</h2>
+            <p>
+              Tại vườn trầm Khánh Hòa, chúng tôi ưu tiên trầm nguyên liệu từ
+              rừng tự nhiên, trải qua quy trình thu hoạch, sấy khô, lưu hương và
+              chế tác thủ công để giữ trọn tinh túy của gỗ trầm, mang lại trải
+              nghiệm hương thơm dịu, bình an và sang trọng.
+            </p>
+            <p>
+              Mỗi sản phẩm là sự kết hợp giữa cảm hứng cổ điển, kỹ thuật gia
+              công tỉ mỉ và sự tôn trọng với thiên nhiên, tạo nên những món quà,
+              vật phẩm phong thủy và không gian sống đậm chất thiền.
+            </p>
+            <div class="stat-strip">
+              <div>
+                <strong>100%</strong>
+                <span>Trầm Hương thiên nhiên</span>
+              </div>
+              <div>
+                <strong>30+</strong>
+                <span>Năm kinh nghiệm</span>
+              </div>
+              <div>
+                <strong>10+</strong>
+                <span>Sản phẩm</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-gallery" aria-label="Quy trình trầm hương">
+            <div class="process-card">
+              <img
+                src="../assets/images/thuhoach.jpg"
+                alt="Quy trình thu hoạch trầm hương"
+                loading="lazy"
+              />
+              <span>Thu hoạch</span>
+            </div>
+            <div class="process-card">
+              <img
+                src="../assets/images/xuly.jpg"
+                alt="Quy trình xử lý trầm hương"
+                loading="lazy"
+              />
+              <span>Xử lý</span>
+            </div>
+            <div class="process-card">
+              <img
+                src="../assets/images/chetac.jpg"
+                alt="Quy trình chế tác trầm hương"
+                loading="lazy"
+              />
+              <span>Chế tác</span>
+            </div>
+            <div class="process-card">
+              <img
+                src="../assets/images/thanhpham.jpg"
+                alt="Sản phẩm trầm hương thành phẩm"
+                loading="lazy"
+              />
+              <span>Thành phẩm</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section commitment">
+        <div class="container commitment__inner">
+          <div class="commitment__content">
+            <span class="eyebrow">Về chúng tôi</span>
+            <h2>
+              Cam kết chất lượng, linh hồn và sự tôn trọng với thiên nhiên.
+            </h2>
+            <p>
+              Với hơn 30 năm đồng hành cùng những người yêu trầm, vườn trầm
+              Khánh Hòa cam kết mang đến hương trầm thiên nhiên 100%, không hóa
+              chất, không pha tạp, và luôn kiểm định rõ nguồn gốc nguyên liệu
+              trước khi đến tay khách hàng.
+            </p>
+          </div>
+          <div class="commitment-videos" aria-label="Video xưởng trầm hương">
+            <video controls playsinline preload="metadata" aria-label="Thu hoạch trầm hương">
+              <source src="../assets/video/thuhoach.mp4" type="video/mp4" />
+            </video>
+            <video controls playsinline preload="metadata" aria-label="Chế tác trầm hương">
+              <source src="../assets/video/chetac.mp4" type="video/mp4" />
+            </video>
+            <video controls playsinline preload="metadata" aria-label="Sản phẩm trầm hương">
+              <source src="../assets/video/sanpham.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="feature-list">
+            <article class="feature-card">
+              <div class="feature-card__icon">✦</div>
+              <h3>Trầm Thiên Nhiên 100%</h3>
+              <p>
+                Nguyên liệu được lựa chọn kỹ lưỡng và kiểm định rõ nguồn gốc.
+              </p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-card__icon">✧</div>
+              <h3>Nghệ Nhân Chế Tác Thủ Công</h3>
+              <p>
+                Mỗi đường cắt và mài sửa đều được thực hiện bằng tay để giữ tông
+                hương nguyên bản.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -161,6 +270,6 @@
     <script src="../js/i18n.js?v=agarwood-overview-contact-mail-20261022"></script>
     <script src="../js/catalog.js?v=product-photos-20261114"></script>
     <script src="../js/main.js?v=product-photos-20261114"></script>
-    <script src="../js/store-header.js?v=checkout-preview"></script>
+    <script src="../js/store-header.js?v=cart-toast"></script>
   </body>
 </html>
